@@ -1,1 +1,101 @@
 // Normally mainpage styles
+.header__top
+	height: 110px
+	color: #fff
+.tabs
+	+clr
+	.tabs__nav
+		float: left
+		width: 294px
+		font-size: 0
+		padding-top: 40px
+		li
+			display: inline-block
+			vertical-align: middle
+			&.is-active
+				a
+					background: #fff
+					color: $dark
+					span
+						border-bottom: none  
+			a
+				display: inline-block
+				height: 25px
+				line-height: 25px
+				border-radius: 3px
+				padding: 0 12px
+				font-size: 15px
+				color: #fff
+				span
+					display: inline-block
+					line-height: 1
+					border-bottom: 1px dotted 
+	.tabs__content
+		overflow: hidden
+		padding-top: 19px
+.adress, 
+	float: left
+	text-align: center
+	+fregat-b
+	font-size: 19px
+	p
+		margin-bottom: 6px
+	ul
+		font-size: 0
+		margin-left: -17px
+		li
+			display: inline-block
+			font-size: 19px
+			margin-left: 17px
+.timetable	
+	float: left
+	margin-left: 87px
+	text-align: center
+	+fregat-b
+	font-size: 19px
+	p
+		line-height: 1.2
+.topper-order
+	float: right
+	padding-top: 12px
+.header
+	.header__in
+		+clr
+		height: 100px
+		background: #FFF
+		padding: 21px 28px 0 14px 
+.logo
+	float: left
+	width: 247px
+	margin-right: 47px
+	a
+		display: block
+		font-size: 0
+		img
+			width: 100%
+.menu
+	overflow: hidden
+	.menu__list 
+		border-radius: 3px
+		+g(#ffc267, #e99318)
+		overflow: hidden
+		display: table
+		width: 100% 
+		li
+			display: table-cell
+			text-align: center
+			a
+				display: block
+				height: 53px
+				line-height: 53px
+				padding: 0 3%   
+				+fregat-b
+				font-size: 17px
+				color: $dark
+				text-transform: uppercase
+				&:hover
+					text-decoration: none
+				&.is-active
+					background: #e38600
+					color: #fff
+					text-decoration: none	
