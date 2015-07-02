@@ -98,4 +98,56 @@
 				&.is-active
 					background: #e38600
 					color: #fff
-					text-decoration: none	
+					text-decoration: none
+			&:first-child
+				a
+					border-radius: 3px 0 0 3px
+			&:last-child
+				a
+					border-radius: 0 3px 3px 0				
+.topper
+	position: relative
+	background: #fff 
+	+gpu
+	.topper__left
+		float: left
+		vertical-align: top
+		width: 247px
+		background: #d6fec2
+	.topper__right	
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 247px 
+.nav
+	padding: 30px 0 
+	background: #d6fec2 
+	ul
+		li
+			a
+				display: block
+				height: 53px
+				line-height: 53px
+				padding: 0 10px 0 30px 
+				+fregat-b
+				font-size: 17px
+				text-transform: uppercase
+				color: $dark
+				+transition(background 200ms, color 200ms)
+				&:hover
+					background: #2c7e21
+					color: #fff
+					text-decoration: none 
+.slider
+	height: 100% 
+	overflow: hidden
+	.slick-list, .slick-track
+		height: 100% 
+	.slider__content
+		position: absolute
+		top: 40px
+		left: 40px
+		bottom: 50px
+		width: 36%
+		+gpu 	

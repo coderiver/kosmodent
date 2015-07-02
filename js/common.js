@@ -23,4 +23,11 @@ head.ready(function() {
        });
   	}
   	tab();
+
+  	// main page slider
+  	$('.js-slider').slick({
+  		dots: true
+  	});
+
+
 });
