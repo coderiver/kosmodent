@@ -3,7 +3,9 @@
 	height: 110px
 	color: #fff
 	+r(1158)
-		padding: 0 24px 
+		padding: 0 24px
+	+r(767)
+		display: none	
 .tabs
 	+clr
 	.tabs__nav
@@ -80,11 +82,16 @@
 	+r(1024)
 		display: none
 .header
+	position: relative
+	z-index: 2
 	.header__in
 		+clr
 		height: 100px
 		background: #FFF
 		padding: 21px 28px 0 14px 
+		+r(767)
+			padding: 15px 10px 0
+			background: transparent 
 .logo
 	float: left
 	width: 247px
@@ -94,6 +101,9 @@
 		font-size: 0
 		img
 			width: 100%
+	+r(767)
+		width: auto 
+		margin-right: 0		
 .menu
 	overflow: hidden
 	+r(1024)
@@ -142,10 +152,24 @@
 		top: 0
 		right: 0
 		bottom: 0
-		left: 247px 
+		left: 247px
+	+r(767)
+		margin-top: -100px
+		.topper__left
+			float: none
+			width: 100%
+		.topper__right
+			position: relative
+			top: auto
+			right: auto
+			left: auto
+			bottom: auto
+			height: 460px 	
 .nav
 	padding: 30px 0 
 	background: #d6fec2 
+	+r(767)
+		text-align: center
 	ul
 		li
 			a
@@ -206,6 +230,11 @@
 				+fregat-b
 				font-size: 24px
 				color: $dark
+	+r(767)
+		top: 0
+		.mob-menu__close
+			top: 22px
+			right: 16px			
 .slider
 	height: 100% 
 	overflow: hidden
@@ -227,11 +256,18 @@
 		+r(960)
 			width: 55%
 		+r(800)
-			width: 60% 		 		
+			width: 60%
+		+r(767)
+			width: auto
+			top: 80px
+			right: 40px
+			text-align: center	 		 		
 .main-wrap
 	padding: 40px 30px
 	+r(1024)
-		padding: 35px 25px  			
+		padding: 35px 25px
+	+r(767)
+		padding: 35px 10px 	  			
 .m-services
 	text-align: center
 	margin-bottom: 50px
@@ -262,17 +298,29 @@
 			.m-services__text
 				background: rgba(#70EFB9, 0.5)
 		+r(1024)
-			margin-left: 18px							
+			margin-left: 18px
+		+r(767)
+			display: block
+			margin: 0 auto 20px
+			&:first-child
+				margin: 0 auto 20px  
+		+r(414)
+			width: 300px 									
 	.m-services__bg
 		position: relative
 		height: 180px
 		border-radius: 3px
 		font-size: 0
+		overflow: hidden
 		z-index: 1
 		img
+			position: absolute
+			top: 0
+			left: 50%
+			+transform(translateX(-50%))
 			border-radius: 3px
-			width: 100%
-			height: 100% 
+			min-height: 100%
+			min-width: 100% 
 	.m-services__text
 		position: absolute
 		bottom: 0
@@ -291,18 +339,25 @@
 	+r(1024)
 		margin-bottom: 30px			  		 		
 .m-news
+	+r(480)
+		padding: 0 22px 
 	.h2
 		text-align: center
 		margin-bottom: 20px
 	.m-news__list
 		font-size: 0
-		margin-left: -2.33%
 		+r(768)
 			text-align: center
+			margin-left: -2.33% 
+		+r(480)
+			margin-left: 0	
 	.m-news__item
 		display: inline-block
+		vertical-align: top
 		width: 23.25%
 		margin-left: 2.33%
+		&:first-child
+			margin-left: 0
 		a
 			display: block
 			text-decoration: none
@@ -313,7 +368,17 @@
 				color: $orange
 		+r(768)
 			width: 35%
-			margin-bottom: 25px	
+			margin-bottom: 25px
+			&:first-child
+				margin-left: 2.33%
+		+r(600)
+			width: 45%
+		+r(480)
+			width: 100%
+			margin-left: 0
+			text-align: left
+			&:first-child
+				margin-left: 0 		
 	.m-news__img
 		margin-bottom: 20px
 		width: 100%
@@ -333,6 +398,8 @@
 		margin: 0 auto 
 		padding: 50px 0 45px
 		background: #2d5a23
+		+r(767)
+			padding: 30px 0 50px 
 	.footer__left
 		float: left
 		width: 247px
@@ -369,7 +436,12 @@
 					margin-right: 0 
 				.tabs__content
 					max-width: 75%
-					margin: 0 auto 	 			 	 	
+					margin: 0 auto
+		+r(768)
+			.tabs
+				.tabs__nav
+					li
+						margin: 0 10px 			 	 			 	 	
 .copyrights
 	font-size: 13px
 	color: #c7d6df
@@ -379,6 +451,9 @@
 	margin-bottom: 20px
 	+r(1158)
 		margin-left: 0
+	+r(600)
+		max-width: 300px
+		margin: 0 auto 	
 .number
 	display: inline-block
 	vertical-align: middle

@@ -63,6 +63,10 @@
 		display: block
 		min-width: 100%
 		min-height: 100%
+		+r(767)
+			position: absolute
+			left: 50%
+			+transform(translateX(-50%))
 	&.slick-loading img
 		display: none
 	display: none
@@ -129,6 +133,9 @@
 	+r(1024)
 		bottom: 25px
 		right: 25px
+	+r(767)
+		right: 50%
+		+transform(translateX(50%))	
 	li
 		position: relative
 		display: inline-block

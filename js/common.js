@@ -26,9 +26,9 @@ head.ready(function() {
 
   	// main page slider
   	$('.js-slider').slick({
-  		dots: true,
-  		autoplay: true,
-		autoplaySpeed: 5000
+  		dots: true
+  		//autoplay: true,
+		//autoplaySpeed: 5000
   	});
 
   	// mobile nav
