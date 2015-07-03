@@ -23,6 +23,7 @@
 // vars
 $dark: #21310f
 $green: #52bb44
+$orange: #ec9921
 // mixins
 =justify
 	text-align: justify
@@ -49,12 +50,32 @@ body
 	font-size: 15px 
 	line-height: 1.4
 	color: $dark
-	background: #52bb44 
+	background: #52bb44
 .center, .main
 	max-width: 1158px
 	margin: 0 auto
+.main
+	background: #fff 	
 .clr
 	+clr	 
+
+// titles
+.h1, .h2, .h3
+	+fregat-b
+	line-height: 1.2
+	margin-bottom: 10px
+.h1
+	font-size: 36px
+	+r(1024)
+		font-size: 30px
+.h2
+	font-size: 24px
+.h3
+	font-size: 19px
+.h4
+	font-size: 17px
+.h5
+	font-size: 15px 	 	
 
 // common blocks      
 .button
@@ -74,7 +95,41 @@ body
 		+transform(translateY(6px))
 		background: #52bb44
 		color: #fff 
+.btn
+	display: inline-block
+	padding: 10px 22px 9px 
+	background: #EC9921
+	border-radius: 3px
+	box-shadow: 0 1px 2px #AE6700
+	+fregat-b
+	font-size: 15px
+	color: $dark
+	text-decoration: none
+	text-transform: uppercase
+	+transition(transform 200ms, color 200ms)
+	&:hover
+		+transform(translateY(6px))
+		color: #fff
+.date
+	font-size: 15px
+	color: #acacac		
 
+// icons
+[class^="icon"]
+	display: inline-block
+	vertical-align: middle 	
+.icon-mob
+	+s(mob)
+.icon-mtc
+	+s(mtc)	
+.icon-call
+	+s(call)
+.icon-viber
+	+s(viber)
+.icon-skype
+	+s(skype)
+.icon-marker
+	+s(marker)
 
 
 

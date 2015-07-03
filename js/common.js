@@ -26,8 +26,18 @@ head.ready(function() {
 
   	// main page slider
   	$('.js-slider').slick({
-  		dots: true
+  		dots: true,
+  		autoplay: true,
+		autoplaySpeed: 5000
   	});
 
+  	// mobile nav
+
+  	$('.js-hamburger').on('click', function(){
+  		$('.js-mob-menu').slideDown();
+  	});
+  	$('.js-mob-menu-close').on('click', function(){
+  		$('.js-mob-menu').slideUp();
+  	});	
 
 });
