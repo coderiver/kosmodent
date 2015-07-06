@@ -44,6 +44,14 @@ $orange: #ec9921
 	line-height: normal
 	vertical-align: top
 	font-size: 15px
+=quote
+	display: block
+	margin-bottom: 20px
+	padding: 25px 35px 
+	background: #f7f7f7
+	text-align: left
+	border-left: 4px solid $green
+	+fregat-i	
 
 body
 	+font 
@@ -87,7 +95,9 @@ h4, .h4
 h5, .h5
 	font-size: 15px 	 	
 
-// common blocks      
+// common blocks
+.quote
+	+quote      
 .button
 	position: relative
 	width: 200px
@@ -120,6 +130,9 @@ h5, .h5
 	&:hover
 		+transform(translateY(6px))
 		color: #fff
+	&.btn_green
+		background: #52bb44
+		box-shadow: 0 1px 2px #52bb44 	
 .date
 	font-size: 15px
 	color: #acacac	

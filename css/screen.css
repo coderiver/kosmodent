@@ -55,11 +55,14 @@ h4, .h4 { font-size: 17px; }
 
 h5, .h5 { font-size: 15px; }
 
+.quote { display: block; margin-bottom: 20px; padding: 25px 35px; background: #f7f7f7; text-align: left; border-left: 4px solid #52bb44; font-family: "FregatItalic", sans-serif; font-style: normal; font-weight: normal; }
+
 .button { position: relative; width: 200px; height: 40px; background: #D6FEC2; border-radius: 3px; box-shadow: 0 1px 2px #0E8E57; text-align: center; color: #21310f; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 15px; text-transform: uppercase; -moz-transition: all 200ms; -o-transition: all 200ms; -webkit-transition: all 200ms; transition: all 200ms; }
 .button:hover, .button:active { -moz-transform: translateY(6px); -ms-transform: translateY(6px); -webkit-transform: translateY(6px); transform: translateY(6px); background: #52bb44; color: #fff; }
 
 .btn { display: inline-block; padding: 10px 22px 9px; background: #EC9921; border-radius: 3px; box-shadow: 0 1px 2px #AE6700; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 15px; color: #21310f; text-decoration: none; text-transform: uppercase; -moz-transition: -moz-transform 200ms, color 200ms; -o-transition: -o-transform 200ms, color 200ms; -webkit-transition: -webkit-transform 200ms, color 200ms; transition: transform 200ms, color 200ms; }
 .btn:hover { -moz-transform: translateY(6px); -ms-transform: translateY(6px); -webkit-transform: translateY(6px); transform: translateY(6px); color: #fff; }
+.btn.btn_green { background: #52bb44; box-shadow: 0 1px 2px #52bb44; }
 
 .date { font-size: 15px; color: #acacac; }
 .date .icon-timing { margin-right: 5px; }
@@ -392,3 +395,8 @@ h5, .h5 { font-size: 15px; }
 .fancybox-nav.fancybox-next { right: 0; }
 .fancybox-nav.fancybox-next span { right: -35px; }
 .fancybox-nav.fancybox-next span:before { content: ""; position: absolute; top: 50%; left: 20px; margin-top: -11px; background: url('../img/icons-s213b605993.png') 0 -578px no-repeat; width: 12px; height: 22px; }
+
+.comments .comments__topper { *zoom: 1; }
+.comments .comments__topper:after { content: " "; display: table; clear: both; }
+.comments .comments__topper .h1 { float: left; }
+.comments .comments__topper .btn { float: right; }

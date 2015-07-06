@@ -583,13 +583,7 @@
 				height: 1px
 				background: $orange
 	blockquote
-		display: block
-		margin-bottom: 20px
-		padding: 25px 35px 
-		background: #f7f7f7
-		text-align: left
-		border-left: 4px solid $green
-		+fregat-i
+		+quote
 
 // advantages
 .adv
@@ -797,3 +791,11 @@
 				margin-top: -11px
 				+s(arr-right)
 					
+// comments
+.comments
+	.comments__topper
+		+clr
+		.h1
+			float: left
+		.btn
+			float: right						
