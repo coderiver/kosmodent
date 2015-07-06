@@ -67,6 +67,15 @@
 			position: absolute
 			left: 50%
 			+transform(translateX(-50%))
+	.gallery &
+		height: auto 
+		img
+			+r(767)
+				position: relative
+				left: auto
+				width: 100%
+				height: auto  
+				+transform(translateX(0)) 
 	&.slick-loading img
 		display: none
 	display: none

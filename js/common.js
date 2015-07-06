@@ -24,11 +24,16 @@ head.ready(function() {
   	}
   	tab();
 
-  	// main page slider
+  	// slider
+    $('.js-slider').on('init', function(event, slick){
+      $(this).addClass('is-loaded');
+    });
+
   	$('.js-slider').slick({
-  		dots: true
-  		//autoplay: true,
-		//autoplaySpeed: 5000
+  		dots: true,
+      adaptiveHeight: true,
+  		autoplay: true,
+		  autoplaySpeed: 5000
   	});
 
   	// mobile nav

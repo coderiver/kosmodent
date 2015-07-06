@@ -88,14 +88,20 @@
 		+clr
 		height: 100px
 		background: #FFF
-		padding: 21px 28px 0 14px 
+		padding: 21px 28px 0 0 
 		+r(767)
+			height: auto 
 			padding: 15px 10px 0
-			background: transparent 
+	&.header_index
+		.header__in
+			+r(767)
+				height: 100px 
+				background: transparent  
 .logo
 	float: left
 	width: 247px
 	margin-right: 47px
+	padding-left: 14px
 	a
 		display: block
 		font-size: 0
@@ -190,6 +196,7 @@
 					height: 45px
 					line-height: 45px 
 					font-size: 15px
+					padding: 0 10px 0 25px
 .hamburger
 	display: none
 	position: relative
@@ -238,6 +245,13 @@
 .slider
 	height: 100% 
 	overflow: hidden
+	opacity: 0
+	+tr(opacity 300ms)
+	&.is-loaded
+		opacity: 1
+	.gallery &
+		+r(767)
+			height: auto 	
 	.slick-list, .slick-track
 		height: 100% 
 	.slider__content
@@ -475,4 +489,95 @@
 	&.number_map
 		margin-left: 0
 		font-size: 13px
-		color: #c7d6df				
+		color: #c7d6df
+		
+// sidebar
+.sidebar
+	width: 247px
+	float: left
+	margin-right: 47px
+	+r(900)
+		width: 212px
+		margin-right: 28px
+	+r(767)
+		width: 100%
+		float: none
+		+order(2)	
+.content
+	overflow: hidden
+	padding-right: 28px
+	padding-bottom: 65px
+	+r(767)
+		+order(1)
+		padding: 20px 10px 30px							
+.article
+	display: block
+	margin-bottom: 40px
+	+r(767)
+		text-align: center 
+	h2
+		margin: 35px 0 30px 
+	p
+		margin-bottom: 20px
+	img
+		width: 50%
+		float: left
+		margin: 0 25px 25px 0
+		+r(767)
+			width: 100%
+			margin: 0 0 25px  
+	a
+		color: $orange
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	ul
+		margin-bottom: 40px
+		text-align: left
+		li
+			position: relative
+			padding-left: 57px
+			margin-bottom: 10px
+			&:before
+				content: ""
+				position: absolute
+				top: 9px
+				left: 0
+				width: 36px
+				height: 1px
+				background: $orange
+	blockquote
+		display: block
+		margin-bottom: 20px
+		padding: 25px 35px 
+		background: #f7f7f7
+		text-align: left
+		border-left: 4px solid $green
+		+fregat-i
+
+// advantages
+.adv
+	.h1
+		margin-bottom: 30px
+	& > p
+		margin-bottom: 25px 
+		font-size: 17px
+		color: #969696
+	.adv__list
+		font-size: 0
+	.adv__item
+		display: inline-block
+		vertical-align: top
+		+clr
+		width: 50%
+		margin-bottom: 30px
+		+r(900)
+			width: 100% 
+	.adv__icon
+		width: 81px
+		float: left
+		margin-right: 7%
+	.adv__text
+		overflow: hidden
+		padding-right: 7%
+		font-size: 15px 

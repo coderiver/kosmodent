@@ -51,30 +51,40 @@ body
 	line-height: 1.4
 	color: $dark
 	background: #52bb44
-.center, .main
+.center
 	max-width: 1158px
 	margin: 0 auto
+	&.center_main
+		+clr
+		background: #fff
 .main
-	background: #fff 	
+	+clr
+	max-width: 1158px
+	margin: 0 auto
+	background: #fff 
+	+r(767)
+		+display-flex
+		+flex-direction(column)			
 .clr
 	+clr	 
 
 // titles
-.h1, .h2, .h3
+h1, h2, h3, .h1, .h2, .h3
 	+fregat-b
 	line-height: 1.2
 	margin-bottom: 10px
-.h1
+h1, .h1
 	font-size: 36px
 	+r(1024)
 		font-size: 30px
-.h2
+h2, .h2
+	margin-bottom: 30px
 	font-size: 24px
-.h3
+h3, .h3
 	font-size: 19px
-.h4
+h4, .h4
 	font-size: 17px
-.h5
+h5, .h5
 	font-size: 15px 	 	
 
 // common blocks      
@@ -113,7 +123,33 @@ body
 .date
 	font-size: 15px
 	color: #acacac		
-
+.breadcrumbs
+	height: 50px 
+	ul
+		font-size: 0
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			margin-left: 50px
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: -33px
+				width: 20px
+				height: 1px
+				background: #c7d6df
+			&:first-child
+				margin-left: 0
+				&:before
+					display: none	
+			a
+				font-size: 13px
+				color: #c7d6df
+				text-decoration: none
+				&:hover
+					text-decoration: underline
 // icons
 [class^="icon"]
 	display: inline-block
@@ -130,12 +166,18 @@ body
 	+s(skype)
 .icon-marker
 	+s(marker)
-
-
-
-
-
-
+.icon-adv-marker
+	+s(adv-marker)
+.icon-adv-exp
+	+s(adv-exp)
+.icon-adv-indiv
+	+s(adv-indiv)
+.icon-adv-money
+	+s(adv-money)
+.icon-adv-safe
+	+s(adv-safe)
+.icon-adv-teeth
+	+s(adv-teeth)
 
 
 
