@@ -507,6 +507,12 @@
 	overflow: hidden
 	padding-right: 28px
 	padding-bottom: 65px
+	.h1
+		margin-bottom: 30px
+	p
+		margin-bottom: 25px 
+		font-size: 17px
+		color: #969696
 	+r(767)
 		+order(1)
 		padding: 20px 10px 30px							
@@ -518,6 +524,8 @@
 	h2
 		margin: 35px 0 30px 
 	p
+		color: $dark
+		font-size: 15px
 		margin-bottom: 20px
 	img
 		width: 50%
@@ -557,12 +565,6 @@
 
 // advantages
 .adv
-	.h1
-		margin-bottom: 30px
-	& > p
-		margin-bottom: 25px 
-		font-size: 17px
-		color: #969696
 	.adv__list
 		font-size: 0
 	.adv__item
@@ -580,4 +582,36 @@
 	.adv__text
 		overflow: hidden
 		padding-right: 7%
-		font-size: 15px 
+		p
+			font-size: 15px
+			color: $dark
+.history
+	.history__list
+		font-size: 0
+		.history__item
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			margin-bottom: 25px
+			padding-right: 10%
+			p
+				margin-bottom: 0
+				font-size: 15px
+				color: $dark
+			+r(900)
+				width: 100%
+				padding-right: 0
+		.history__year
+			position: relative
+			+fregat
+			font-size: 36px 
+			padding-bottom: 15px
+			margin-bottom: 15px
+			&:after
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 82px
+				height: 4px
+				background: $orange  		  			
