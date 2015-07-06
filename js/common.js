@@ -1,7 +1,12 @@
 head.ready(function() {
 
-	// tabs
+	// fancybox init
 
+  $('.fancybox').fancybox({
+    padding: 0
+  });
+
+  // tabs
 	function tab() {
        $(".js-tab").each(function(){
         	var tab_link = $(this).find("a");
