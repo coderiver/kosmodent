@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>therapy_inner</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/jquery.fancybox.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- header -->
+	<header class="header">
+		<div class="center">
+			<div class="header__top">
+				<div class="tabs js-tab-group">
+					<ul class="tabs__nav js-tab">
+						<li><a href="tab1"><span>Новополоцк</span></a></li>
+						<li><a href="tab2"><span>Полоцк</span></a></li>
+					</ul>
+					<!-- tab content -->
+					<div class="tabs__content tab1 js-tab-cont">
+						<div class="adress">
+							<p>ул. Нижне-Покровская, д. 21</p>
+							<ul>
+								<li>+375 29 643-07-33</li>
+								<li>+375 33 543-07-33</li>
+							</ul>
+						</div>
+						<div class="timetable">
+							<div class="timetable__title">Время работы</div>
+							<p>пн-пт 8:00–20:00</p>
+							<p>сб-вс 8:00–18:00</p>
+						</div>
+						<div class="topper-order">
+							<button type="button" class="button">Записаться на приём</button>
+						</div>
+					</div>
+					<div class="tabs__content tab2 js-tab-cont" style="display: none;">
+						<div class="adress">
+							<p>ул. Нижне-Покровская, д. 21</p>
+							<ul>
+								<li>+375 29 643-07-33</li>
+								<li>+375 33 543-07-33</li>
+							</ul>
+						</div>
+						<div class="timetable">
+							<div class="timetable__title">Время работы</div>
+							<p>пн-пт 8:00–20:00</p>
+							<p>сб-вс 8:00–18:00</p>
+						</div>
+						<div class="topper-order">
+							<button type="button" class="button">Записаться на приём</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__in">
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+				<nav class="menu" role="navigation">
+					<ul class="menu__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#" class="is-active">О клинике</a></li>
+						<li><a href="#">Лечение и цены</a></li>
+						<li><a href="#">Врачи</a></li>
+						<li><a href="#">Иногородним</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<button type="button" class="hamburger js-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<nav class="mob-menu js-mob-menu" style="display: none;">
+				<button type="button" class="mob-menu__close js-mob-menu-close"></button>
+				<ul class="mob-menu__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О клинике</a></li>
+					<li><a href="#">Лечение и цены</a></li>
+					<li><a href="#">Врачи</a></li>
+					<li><a href="#">Иногородним</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<button type="button" class="button">Записаться на приём</button>
+			</nav>
+		</div>
+	</header>
+	<div class="main">
+		<!-- sidebar -->
+		<aside class="sidebar">
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="#" class="is-active">Лечение кариеса</a>
+						<ul class="subnav">
+							<li><a href="#">Консультация</a></li>
+							<li><a href="#">Анестезия</a></li>
+							<li>
+								<a href="#">Эндодонтическое лечение</a>
+								<ul>
+									<li><a href="#">Одноконевой зуб с пломбой</a></li>
+									<li><a href="#">Двухкорневой зуб с пломбой</a></li>
+									<li><a href="#">Трехкорневой зуб с пломбой</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Механическое снятие зубных отложений</a></li>
+							<li><a href="#">Ультразвуковое снятие зубных отложений</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Исправление прикуса</a></li>
+					<li><a href="#">Детский стоматолог</a></li>
+					<li><a href="#">Протезирование</a></li>
+					<li><a href="#">Ортодонтия</a></li>
+					<li><a href="#">Парадонтология</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<!--  content -->
+		<div class="content">
+			<!-- breadcrumbs -->
+			<nav class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Терапия</a></li>
+					<li><a href="#">Ультразвуковое снятие зубных отложений</a></li>
+				</ul>
+			</nav>
+			<!-- article -->
+			<h1 class="h1">Ультразвуковое снятие зубных отложений</h1>
+			<article class="article">
+				<img src="img/img9.jpg" align="left" alt="">
+				<p style="color: #969696;">Перед терапевтической стоматологией стоит целый ряд задач: определение этиологии и патогенеза болезней зубов и околозубных тканей, заболеваний слизистой оболочки ротовой полости, установление их диагноза, разрабатывание методики терапии и профилактики. </p>
+				<p>От степени развитости консервативной стоматологии зависит уровень стоматологической поддержки населения. Больше всего внимания должно уделяться созданию и распространению профилактических мер по основным болезням полости рта. Сегодня ситуация в стоматологии обстоит таким образом, что полученных знаний о проблеме кариеса и болезней пародонта хватает для успешной профилактики этих болезней.</p>
+				<p>К самым часто встречающимся заболеваниям человека можно с легкость отнести болезни зубов. Статистика говорит о том, что заболеваниям зубов подвержены более 90% населения Земли. Такое масштабное распространение оказывает значительное влияние на органы здравоохранения, ставя перед ними задачи следующих направлений: разработка методов профилактики заболеваний зубов, модернизацию способов лечения, исследование причин появления этих болезней.</p>
+				<blockquote>Статистика говорит о том, что заболеваниям зубов подвержены более 90% населения Земли.</blockquote>
+				<h2>Такое масштабное распространение оказывает значительное влияние на органы здравоохранения, ставя задачи следующих направлений: </h2>
+				<ul>
+					<li>разработка методов профилактики заболеваний зубов;</li>
+					<li>модернизацию способов лечения; </li>
+					<li>исследование причин появления этих болезней.</li>
+				</ul>
+				<img src="img/img9.jpg" alt="">
+				<p>Ультразвуковой наконечник во рту у пациента  При работе ультразвуковой насадки на нее подается охлаждающая жидкость (вода)  Схема вибрации кончика ультразвуковой насадки, при помощи которой удаляются зубные отложения. В процессе снятия отложений на кончик насадки всегда подается жидкость (обычно вода, реже растворы антисептиков), которая необходима для охлаждения насадки и поверхности зуба, а также для смывания осколков зубных отложений и вымывания их из пародонтальных карманов. Во время процедуры стоматолог всегда ставит в полость рта пациента слюноотсос, который удаляет всю жидкость.</p>
+			</article>
+			<!-- accordeon -->
+			<ul class="accordeon accordeon_price">
+				<li class="accordeon__item js-accordeon">
+					<div class="accordeon__topper">
+						<div class="accordeon__title">Стоимость для граждан РБ</div>
+					</div>
+					<div class="accordeon__content js-accordeon-data" style="display: none;">
+						<div class="price">
+							<h3 class="h3">Основные манипуляции</h3>
+							<div class="price__table">
+								<div class="price__row">
+									<div class="price__name"> Посещение клиники пациентом (первичное/повторное)</div>
+									<div class="price__value">бесплатно</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name"> Посещение клиники пациентом (первичное/повторное)</div>
+									<div class="price__value">80 000 руб.</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name"> Посещение клиники пациентом (первичное/повторное)</div>
+									<div class="price__value">100 000 руб.</div>
+								</div>
+							</div>
+						</div>
+						<div class="price">
+							<h3 class="h3">Лечение корневых каналов</h3>
+							<div class="price__table">
+								<div class="price__row">
+									<div class="price__name">Механическая и медикаментозная обработка корневого канала</div>
+									<div class="price__value">бесплатно</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name">Пломбирование корневого канала</div>
+									<div class="price__value">80 000 руб.</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name">Распломбировка корневого канала</div>
+									<div class="price__value">100 000 руб.</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</li>
+				<li class="accordeon__item js-accordeon">
+					<div class="accordeon__topper">
+						<div class="accordeon__title">Стоимость для иностранных граждан</div>
+					</div>
+					<div class="accordeon__content js-accordeon-data">
+						<div class="price">
+							<h3 class="h3">Основные манипуляции</h3>
+							<div class="price__table">
+								<div class="price__row">
+									<div class="price__name"> Посещение клиники пациентом (первичное/повторное)</div>
+									<div class="price__value">100€</div>
+									<div class="price__value">80$</div>
+									<div class="price__value">200₱</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name"> Посещение клиники пациентом (первичное/повторное)</div>
+									<div class="price__value">100€</div>
+									<div class="price__value">80$</div>
+									<div class="price__value">200₱</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name"> Посещение клиники пациентом (первичное/повторное)</div>
+									<div class="price__value">100€</div>
+									<div class="price__value">80$</div>
+									<div class="price__value">200₱</div>
+								</div>
+							</div>
+						</div>
+						<div class="price">
+							<h3 class="h3">Лечение корневых каналов</h3>
+							<div class="price__table">
+								<div class="price__row">
+									<div class="price__name">Механическая и медикаментозная обработка корневого канала</div>
+									<div class="price__value">бесплатно</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name">Пломбирование корневого канала</div>
+									<div class="price__value">80 000 руб.</div>
+								</div>
+								<div class="price__row">
+									<div class="price__name">Распломбировка корневого канала</div>
+									<div class="price__value">100 000 руб.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="footer__right">
+			<div class="tabs js-tab-group">
+				<ul class="tabs__nav js-tab">
+					<li><a href="tab1"><span>Новополоцк</span></a></li>
+					<li><a href="tab2"><span>Полоцк</span></a></li>
+				</ul>
+				<!-- tab content -->
+				<div class="tabs__content tab1 js-tab-cont">
+					<div class="phones">
+						<a class="number" href="tel:+375 29 643-07-33"><span class="icon-mob"></span> +375 29 643-07-33</a>
+						<a class="number" href="tel:+375 33 543-07-33"><span class="icon-mtc"></span> +375 33 543-07-33</a>
+						<a class="number" href="tel:+375 17 243-07-33"><span class="icon-call"></span> +375 17 243-07-33</a>
+						<a class="number number_viber" href="tel:+375 29 643-07-33"><span class="icon-viber"></span> +375 29 643-07-33</a>
+						<a class="number number_skype" href="skype:kosmedent"><span class="icon-skype"></span> kosmedent</a>
+					</div>
+					<a href="#" class="number number_map"><span class="icon-marker"></span> <span>ул. Нижне-Покровская, д. 21</span></a>
+				</div>
+				<div class="tabs__content tab2 js-tab-cont" style="display: none;">
+					<div class="phones">
+						<a class="number" href="tel:+375 29 643-07-33"><span class="icon-mob"></span> +375 29 643-07-33</a>
+						<a class="number" href="tel:+375 33 543-07-33"><span class="icon-mtc"></span> +375 33 543-07-33</a>
+						<a class="number" href="tel:+375 17 243-07-33"><span class="icon-call"></span> +375 17 243-07-33</a>
+						<a class="number number_viber" href="tel:+375 29 643-07-33"><span class="icon-viber"></span> +375 29 643-07-33</a>
+						<a class="number number_skype" href="skype:kosmedent"><span class="icon-skype"></span> kosmedent</a>
+					</div>
+					<a href="#" class="number number_map"><span class="icon-marker"></span> <span>ул. Нижне-Покровская, д. 21</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__left">
+			<div class="copyrights">© 2015  ЧМУП «Космедент»</div>
+		</div>
+	</div>
+</footer>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

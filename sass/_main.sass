@@ -176,9 +176,9 @@
 	background: #d6fec2 
 	+r(767)
 		text-align: center
-	ul
-		li
-			a
+	& > ul
+		& > li
+			& > a
 				display: block
 				height: 53px
 				line-height: 53px
@@ -188,7 +188,7 @@
 				text-transform: uppercase
 				color: $dark
 				+transition(background 200ms, color 200ms)
-				&:hover
+				&:hover, &.is-active
 					background: #2c7e21
 					color: #fff
 					text-decoration: none
@@ -197,6 +197,37 @@
 					line-height: 45px 
 					font-size: 15px
 					padding: 0 10px 0 25px
+.subnav
+	padding-left: 30px 
+	& > li
+		& > a
+			display: block
+			padding: 5px 10px 5px 10px
+			font-size: 15px
+			color: $dark
+			letter-spacing: 1px
+			+transition(background 200ms, color 200ms)
+			&:hover, &.is-active
+				background: #2c7e21
+				color: #fff
+				text-decoration: none
+			+r(1024)
+				font-size: 13px
+		& > ul
+			padding-left: 10px
+			li
+				a
+					display: block
+					padding: 5px 10px 5px 10px
+					font-size: 13px
+					color: $dark
+					+transition(background 200ms, color 200ms)
+					&:hover, &.is-active
+						background: #2c7e21
+						color: #fff
+						text-decoration: none
+					+r(1024)
+						font-size: 12px								
 .hamburger
 	display: none
 	position: relative
@@ -380,19 +411,7 @@
 	.h2
 		text-align: center
 		margin-bottom: 20px
-	.news__list
-		font-size: 0
-		margin-left: -3.3% 
-		+r(767)
-			text-align: center
-		+r(480)
-			margin-left: 0	
 	.news__item
-		display: inline-block
-		vertical-align: top
-		width: 30%
-		margin-left: 3.3%
-		margin-bottom: 30px
 		a
 			display: block
 			text-decoration: none
@@ -403,16 +422,7 @@
 				font-size: 15px
 			&:hover
 				p
-					color: $orange
-		+r(767)
-			width: 35%
-			margin-bottom: 25px
-		+r(600)
-			width: 45%
-		+r(480)
-			width: 100%
-			margin-left: 0
-			text-align: left 		
+					color: $orange		
 	.news__img
 		margin-bottom: 20px
 		width: 100%
@@ -426,10 +436,6 @@
 			border-radius: 3px
 	.date
 		margin-bottom: 30px		
-	.news__top-img
-		display: block
-		margin-bottom: 35px
-		width: 100% 
 	.news__all
 		text-align: center	 
 // footer
@@ -556,12 +562,15 @@
 		font-size: 15px
 		margin-bottom: 20px
 	img
-		width: 50%
+		width: 100%
+		margin: 0 0 25px 0
+	img[align="left"]
+		width: 50% 	  
 		float: left
 		margin: 0 25px 25px 0
 		+r(767)
 			width: 100%
-			margin: 0 0 25px  
+			margin: 0 0 25px 0  
 	a
 		color: $orange
 		text-decoration: none
@@ -969,22 +978,27 @@
 			background: #000
 
 // vacancy
-.vacancy
-	.vacancy__item
+.accordeon
+	&.accordeon_price
+		.accordeon__content
+			padding: 0 
+	.accordeon__item
 		&:first-child
-			.vacancy__topper
+			.accordeon__topper
 				border-width: 1px
 		&.is-active
-			.vacancy__topper
+			.accordeon__topper
 				background: #ec9921
 				color: #fff
 				&:before
 					+rotate(180)
-					border-color: #fff transparent transparent transparent	
-	.vacancy__topper
+					border-color: #fff transparent transparent transparent
+			.accordeon__title
+				+r(568)
+					border-bottom: none 
+	.accordeon__topper
 		position: relative
-		height: 82px
-		padding: 25px 45px 0 100px 
+		padding: 25px 45px 25px 100px 
 		border: 1px solid #ec9921
 		border-width: 0 1px 1px
 		+fregat-b
@@ -1003,19 +1017,24 @@
 		&:hover
 			background: #fbb959
 		+r(900)
-			padding: 25px 25px 0 60px
+			padding: 25px 25px 25px 60px
 			&:before
 				left: 21px
 		+r(568)
-			padding: 13px 25px 0 60px 						
-	.vacancy__title
+			text-align: center
+			padding: 20px
+			&:before
+				display: none 						
+	.accordeon__title
 		float: left
 		font-size: 24px
 		+r(900)
 			font-size: 21px
 		+r(568)
 			float: none
-	.vacancy__payment
+			display: inline
+			border-bottom: 1px dotted 
+	.accordeon__payment
 		float: right
 		padding-top: 4px
 		font-size: 17px
@@ -1023,7 +1042,7 @@
 			font-size: 15px
 		+r(568)
 			float: none	
-	.vacancy__content
+	.accordeon__content
 		border: 1px solid #ec9921
 		border-width: 0 1px 1px
 		padding: 42px
@@ -1031,3 +1050,211 @@
 			padding: 30px
 		+r(568)
 			padding: 20px 	 	 						  		 	
+
+// partners
+.partners
+	.partners__item
+		display: table
+		width: 100%
+		table-layout: fixed
+		padding: 30px 25px 40px 
+		margin-bottom: 35px
+		background: #f7f7f7
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12)
+		+r(600)
+			padding: 20px 15px
+			display: block 
+			text-align: center
+	.partners__img
+		display: table-cell
+		width: 215px
+		vertical-align: middle
+		font-size: 0
+		img
+			max-width: 100%
+		+r(600)
+			display: block
+			width: 100%
+			margin-bottom: 20px 	
+	.partners__content
+		display: table-cell
+		font-size: 15px
+		color: $dark
+		p
+			margin-bottom: 15px
+		a
+			color: $green
+			&:hover
+				text-decoration: none
+		+r(600)
+			display: block
+			width: 100%		
+	.partners__title	
+		+fregat-b
+		font-size: 24px
+		margin-bottom: 20px
+
+// treatment
+.treatment
+	.treatment__img
+		margin-bottom: 20px
+		font-size: 0
+		border-radius: 3px
+		box-shadow: 0 1px 1px rgba(#9dd4e4, 0.9)
+		img
+			width: 100%
+	.treatment__title
+		margin-bottom: 15px
+		color: $green
+		font-size: 17px
+		+fregat
+	.treatment__list
+		li
+			position: relative
+			padding-left: 28px
+			margin-bottom: 15px
+			&:before
+				content: ""
+				position: absolute
+				top: 9px
+				left: 0
+				width: 15px
+				height: 1px 
+				background: #cecece
+			a
+				color: #acacac
+				font-size: 15px
+				text-decoration: underline
+				&:hover
+					text-decoration: none	   			 
+
+// price
+.price
+	padding: 40px 0 0 40px
+	border-top: 1px solid #ec9921
+	&:first-child
+		border-top: none  	
+	+r(568)
+		text-align: center
+		padding: 30px 20px 0 					
+	.price__table
+		display: table
+		width: 100%
+		table-layout: fixed
+		border-collapse: collapse
+		+r(568)
+			display: block
+	.price__row
+		display: table-row
+		border-top: 1px solid #cecece
+		&:first-child
+			border-top: none
+		+r(568)
+			display: block	  
+	.price__name
+		display: table-cell
+		text-align: left
+		vertical-align: middle
+		padding: 20px 0
+		+r(568)
+			display: block
+			text-align: center
+			padding: 20px 0 0 
+	.price__value
+		display: table-cell
+		text-align: right
+		vertical-align: middle
+		padding: 20px 40px 20px 0
+		+r(568)
+			display: inline-block
+			text-align: center
+			padding: 20px
+			
+// doctors
+.doctors
+	.doctors__list
+		padding-left: 4px
+	.doctors__item
+		display: table
+		width: 100%
+		margin-bottom: 35px
+		border-collapse: collapse
+		table-layout: fixed 
+		background: #f7f7f7
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12)
+		+r(480)
+			display: block
+			text-align: center 
+	.doctors__img
+		display: table-cell
+		vertical-align: top
+		width: 175px
+		font-size: 0
+		img
+			width: 100%
+			max-width: 175px
+			height: 100%  
+		+r(480)
+			display: block
+			padding-top: 20px
+			width: 100%
+			img
+				height: auto	
+	.doctors__info
+		display: table-cell
+		vertical-align: top
+		padding: 32px
+		+r(960)
+			padding: 17px  
+		+r(480)
+			display: block	
+	.doctors__name
+		+fregat-b
+		font-size: 24px
+		margin-bottom: 20px
+	.doctors__job
+		font-size: 15px
+		margin-bottom: 30px
+		
+.doctor
+	.doctor__topper
+		+clr
+		padding-left: 2px
+		margin-bottom: 30px
+		+r(568)
+			text-align: center
+	.doctor__img
+		width: 212px
+		float: left
+		margin-right: 32px
+		font-size: 0
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12)
+		img
+			width: 100%
+			max-width: 212px
+			height: auto
+		+r(568)
+			float: none
+			margin-right: 0
+			display: inline-block
+			text-align: center
+			margin-bottom: 20px	 
+	.doctor__about
+		overflow: hidden
+		p
+			font-size: 15px
+			color: $dark
+		+r(568)
+			overflow: visible
+			display: block	
+	.doctor__spec
+		border: 1px solid #cecece
+		padding: 20px 0
+		border-width: 1px 0
+		margin-bottom: 30px
+		font-size: 15px
+		strong
+			+fregat-b
+			font-size: 19px  	
+			 
+	
