@@ -123,14 +123,29 @@
 			<div class="comments">
 				<div class="comments__topper">
 					<h1 class="h1">Отзывы</h1>
-					<button type="button" class="btn btn_green">Добавить отзыв</button>
+					<button type="button" class="btn btn_green js-popup" data-link="add-comment">Добавить отзыв</button>
 				</div>
 				<p>Если же у вас более серьезные проблемы, необходимо протезирование, имплантация зубов, или исправление прикуса, то выбор в пользу той или иной стоматологии сделать труднее. Если же у вас более серьезные проблемы, необходимо протезирование, имплантация зубов, или исправление прикуса, то выбор в пользу той или иной стоматологии сделать труднее. </p>
 				<ul class="comments__list">
 					<li class="comments__item">
-						<div class="comments__name"></div>
-						<div class="date"></div>
-						<div class="quote"></div>
+						<div class="comments__name">Анастасия Федоровна Степанова </div>
+						<div class="date">05 мая 2015</div>
+						<div class="quote">Огромное спасибо доктору А.Ф. Степановой за отлично проведенное лечение. Все прошло просто замечательно, а главное безболезненно, несмотря на сложность проблем, мне все быстро залечили. Теперь я смогу улыбаться во все 32 зуба.</div>
+					</li> 
+					<li class="comments__item">
+						<div class="comments__name">Анастасия Федоровна Степанова </div>
+						<div class="date">05 мая 2015</div>
+						<div class="quote">Огромное спасибо доктору А.Ф. Степановой за отлично проведенное лечение. Все прошло просто замечательно, а главное безболезненно, несмотря на сложность проблем, мне все быстро залечили. Теперь я смогу улыбаться во все 32 зуба.</div>
+					</li> 
+					<li class="comments__item">
+						<div class="comments__name">Анастасия Федоровна Степанова </div>
+						<div class="date">05 мая 2015</div>
+						<div class="quote">Огромное спасибо доктору А.Ф. Степановой за отлично проведенное лечение. Все прошло просто замечательно, а главное безболезненно, несмотря на сложность проблем, мне все быстро залечили. Теперь я смогу улыбаться во все 32 зуба.</div>
+					</li> 
+					<li class="comments__item">
+						<div class="comments__name">Анастасия Федоровна Степанова </div>
+						<div class="date">05 мая 2015</div>
+						<div class="quote">Огромное спасибо доктору А.Ф. Степановой за отлично проведенное лечение. Все прошло просто замечательно, а главное безболезненно, несмотря на сложность проблем, мне все быстро залечили. Теперь я смогу улыбаться во все 32 зуба.</div>
 					</li> 
 				</ul>
 				<!-- pagination -->
@@ -183,6 +198,59 @@
 		</div>
 	</div>
 </footer>
+<!-- popup -->
+<div class="popup" id="add-comment" style="display: none;">
+	<div class="popup__in">
+		<button type="button" class="popup__close js-popup-close"></button>
+		<div class="popup__content">
+			<h1 class="h1">Добавить отзыв</h1>
+			<div class="form">
+				<form action="#" class="js-validate">
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Фамилия и имя" name="name" data-validation="required">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Телефон" name="phone" data-validation="custom" data-validation-regexp="^[-0-9()+ ]+$">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="textarea">
+							<textarea type="text" placeholder="Сообщение" name="message" data-validation="required"></textarea>
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row">
+						<p>Отправить сообщение</p>
+						<div class="radio-wrap">
+							<label class="radio">
+								<input type="radio" name="message-type" >
+								<div>
+									<span>Как отзыв</span>
+									<p>Сообщение будет размещено в разделе «Отзывы»</p>
+								</div>
+							</label>
+							<label class="radio">
+								<input type="radio" name="message-type">
+								<div>
+									<span>Как жалобу</span>
+									<p>Сообщение  будет отправлено в администрацию клиники</p>
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<button type="sudmit" class="btn btn_green">отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>	
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
