@@ -64,6 +64,12 @@ h5, .h5 { font-size: 15px; }
 @media only screen and (max-width: 600px) { .grid .grid__item { width: 45%; } }
 @media only screen and (max-width: 480px) { .grid .grid__item { width: 100%; margin-left: 0; text-align: left; } }
 
+.block-wrap { padding-left: 2px; }
+
+.block { margin-bottom: 35px; background: #f7f7f7; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12); }
+@media only screen and (max-width: 768px) { .block { margin-bottom: 25px; } }
+@media only screen and (max-width: 568px) { .block { margin-bottom: 15px; } }
+
 .quote { display: block; margin-bottom: 20px; padding: 25px 35px; background: #f7f7f7; text-align: left; border-left: 4px solid #52bb44; font-family: "FregatItalic", sans-serif; font-style: normal; font-weight: normal; }
 .quote a { font-family: "HelveticaNeueCyr-Roman", sans-serif; font-style: normal; font-weight: normal; color: #52bb44; text-decoration: underline; }
 .quote a:hover { text-decoration: none; }
@@ -551,3 +557,34 @@ h5, .h5 { font-size: 15px; }
 @media only screen and (max-width: 568px) { .doctor .doctor__about { overflow: visible; display: block; } }
 .doctor .doctor__spec { border: 1px solid #cecece; padding: 20px 0; border-width: 1px 0; margin-bottom: 30px; font-size: 15px; }
 .doctor .doctor__spec strong { font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 19px; }
+
+.nonres { display: table; width: 100%; border-collapse: collapse; table-layout: fixed; }
+@media only screen and (max-width: 600px) { .nonres { display: block; text-align: center; } }
+.nonres .nonres__img { display: table-cell; vertical-align: middle; width: 210px; text-align: center; font-size: 0; }
+.nonres .nonres__img img { max-width: 90%; }
+@media only screen and (max-width: 900px) { .nonres .nonres__img { width: 150px; } }
+@media only screen and (max-width: 600px) { .nonres .nonres__img { display: block; width: 100%; padding-top: 20px; } }
+.nonres .nonres__content { display: table-cell; vertical-align: top; padding: 32px 32px 32px 0; }
+.nonres .nonres__content .h2 { margin-bottom: 20px; }
+@media only screen and (max-width: 600px) { .nonres .nonres__content { display: block; padding: 20px; } }
+.nonres .nonres__list { font-size: 0; }
+.nonres .nonres__list li { position: relative; display: inline-block; vertical-align: top; width: 50%; margin-bottom: 15px; padding-left: 28px; }
+.nonres .nonres__list li:before { content: ""; position: absolute; top: 10px; left: 0; width: 13px; height: 1px; background: #52bb44; }
+.nonres .nonres__list li a { font-size: 15px; color: #52bb44; letter-spacing: 0.5px; }
+@media only screen and (max-width: 600px) { .nonres .nonres__list li { width: 100%; padding-left: 0; }
+  .nonres .nonres__list li:before { display: none; } }
+
+.route > p { color: #21310f; }
+.route .route__row { font-size: 0; border-top: 1px solid #cecece; padding: 30px 0; }
+.route .route__row:first-child { border-top: none; }
+.route .route__col { display: inline-block; vertical-align: top; width: 25%; font-size: 17px; color: #969696; padding-right: 5px; }
+.route .route__col p { color: #21310f; margin-bottom: 0; font-size: 17px; }
+.route .route__col a { color: #ec9921; }
+.route .route__col a:hover { text-decoration: none; }
+.route .route__col.wide { width: 75%; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+@media only screen and (max-width: 600px) { .route .route__col { width: 50%; font-size: 15px; margin-bottom: 5px; }
+  .route .route__col p { font-size: 15px; }
+  .route .route__col.wide { width: 100%; } }
+
+.map { position: relative; height: 390px; }
+.map #YMapsID { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
