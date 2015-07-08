@@ -616,3 +616,12 @@ h5, .h5 { font-size: 15px; }
 .contacts .tabs .tabs__nav li.is-active a { background: #fdbe61; }
 .contacts .tabs .tabs__content { clear: both; *zoom: 1; overflow: visible; }
 .contacts .tabs .tabs__content:after { content: " "; display: table; clear: both; }
+
+.error { text-align: center; }
+.error .error__code { margin-bottom: 50px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 260px; color: #ccc; line-height: 1; }
+@media only screen and (max-width: 768px) { .error .error__code { font-size: 180px; } }
+@media only screen and (max-width: 480px) { .error .error__code { font-size: 120px; } }
+.error .error__info .h2 { font-family: "FregatRegular", sans-serif; font-style: normal; font-weight: normal; margin-bottom: 20px; }
+.error .error__info p { font-size: 15px; color: #21310f; }
+.error .error__info a { color: #ec9921; }
+.error .error__info a:hover { text-decoration: none; }

@@ -1419,7 +1419,32 @@
 		.tabs__content
 			clear: both
 			+clr
-			overflow: visible				
+			overflow: visible
+			
+// error
+.error
+	text-align: center
+	.error__code
+		margin-bottom: 50px
+		+fregat-b
+		font-size: 260px
+		color: #ccc
+		line-height: 1
+		+r(768)
+			font-size: 180px
+		+r(480)
+			font-size: 120px 	
+	.error__info
+		.h2
+			+fregat
+			margin-bottom: 20px
+		p
+			font-size: 15px 
+			color: $dark
+		a
+			color: $orange
+			&:hover
+				text-decoration: none								
 			 				 	
 			 
 	
