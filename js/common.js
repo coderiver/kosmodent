@@ -28,6 +28,32 @@ head.ready(function() {
          myMap.geoObjects.add(myPlacemark1)
 
         });
+
+        ymaps.ready(function () {
+          var myMap = new ymaps.Map('YMapsID2', {
+              center: [55.48504,28.764819],
+              zoom: 17,
+              controls: []
+          });
+          myMap.behaviors.disable('scrollZoom');
+         // Создаем метку с помощью вспомогательного класса.
+            myPlacemark1 = new ymaps.Placemark([55.485148,28.766418], {
+                // Свойства.
+
+                balloonContent: 'ЖД вокзал',
+                hintContent: 'проспект Франциска Скорины, д.21'
+            }, {
+                // Опции.
+                // Стандартная фиолетовая иконка.
+                iconLayout: 'default#image',
+                iconImageSize: [37, 48],
+                iconImageHref: '../img/marker.png'
+
+            });
+
+         myMap.geoObjects.add(myPlacemark1)
+
+        });
     };
 
     // accordeon

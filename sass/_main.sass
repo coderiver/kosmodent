@@ -36,7 +36,10 @@
 				span
 					display: inline-block
 					line-height: 1
-					border-bottom: 1px dotted 
+					border-bottom: 1px dotted
+				&:hover
+					span
+						border-bottom: none 	 
 	.tabs__content
 		overflow: hidden
 		padding-top: 19px
@@ -524,6 +527,16 @@
 		margin-left: 0
 		font-size: 13px
 		color: #c7d6df
+.number-list
+	.number
+		position: relative
+		padding-left: 35px 
+		margin-bottom: 0
+		span
+			position: absolute
+			top: 50%
+			left: 0
+			+transform(translateY(-50%))	
 		
 // sidebar
 .sidebar
@@ -860,7 +873,7 @@
 		+tr(opacity 300ms)
 		&:hover
 			opacity: 1
-		+r(700)
+		+r(1024)
 			top: 20px
 			right: 20px
 			+s(close-narrow-dark)	
@@ -879,6 +892,7 @@
 		position: relative
 		margin-bottom: 10px
 		padding-bottom: 25px 
+		text-align: left
 		&:before
 			content: "*"
 			position: absolute
@@ -890,7 +904,9 @@
 			display: none
 		&.require
 			&:before
-				display: block	
+				display: block
+	.form__submit
+		text-align: center				
 .input, .textarea
 	display: block
 	text-align: left
@@ -943,6 +959,8 @@
 			width: 45% 	 		
 .radio
 	position: relative
+	display: block
+	margin-bottom: 5px
 	input
 		position: absolute
 		opacity: 0
@@ -1335,30 +1353,73 @@
 			color: $dark
 			margin-bottom: 0
 			font-size: 17px
+			span
+				display: inline-block
+				margin-left: 10px
 		a
 			color: $orange
 			&:hover
-				text-decoration: none	
+				text-decoration: none
+		a.number
+			+fregat-b
+			color: $dark
+			margin-left: 0
+			&.number_viber
+				color: #b580e0
+			&.number_skype
+				+font
+				font-size: 15px
+				color: #00aeec
+			&.number_mail
+				+font
+				color: $orange				
 		&.wide
 			width: 75%
 			+text-overflow
-		+r(600)
+		+r(1024)
 			width: 50%
 			font-size: 15px
 			margin-bottom: 5px
 			p
 				font-size: 15px
 			&.wide
-				width: 100% 	
+				width: 100%
+		+r(480)
+			width: 100% 		 	
 .map
 	position: relative
 	height: 390px
-	#YMapsID
+	& > div
 		position: absolute
 		top: 0
 		bottom: 0
 		right: 0
 		left: 0
+		
+// contacts
+.contacts
+	.contacts__topper
+		+clr
+		.h1
+			float: left
+		.btn
+			float: right
+	.tabs
+		.tabs__nav
+			padding-top: 0
+			li
+				a
+					color: $dark
+					&:hover
+						span
+							border-bottom: none 
+				&.is-active
+					a
+						background: #fdbe61 	
+		.tabs__content
+			clear: both
+			+clr
+			overflow: visible				
 			 				 	
 			 
 	

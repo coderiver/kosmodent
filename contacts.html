@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>contacts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
+	<link rel="stylesheet" media="all" href="css/jquery.fancybox.css" >
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- header -->
+	<header class="header">
+		<div class="center">
+			<div class="header__top">
+				<div class="tabs js-tab-group">
+					<ul class="tabs__nav js-tab">
+						<li><a href="tab1"><span>Новополоцк</span></a></li>
+						<li><a href="tab2"><span>Полоцк</span></a></li>
+					</ul>
+					<!-- tab content -->
+					<div class="tabs__content tab1 js-tab-cont">
+						<div class="adress">
+							<p>ул. Нижне-Покровская, д. 21</p>
+							<ul>
+								<li>+375 29 643-07-33</li>
+								<li>+375 33 543-07-33</li>
+							</ul>
+						</div>
+						<div class="timetable">
+							<div class="timetable__title">Время работы</div>
+							<p>пн-пт 8:00–20:00</p>
+							<p>сб-вс 8:00–18:00</p>
+						</div>
+						<div class="topper-order">
+							<button type="button" class="button js-popup" data-link="feedback">Записаться на приём</button>
+						</div>
+					</div>
+					<div class="tabs__content tab2 js-tab-cont" style="display: none;">
+						<div class="adress">
+							<p>ул. Нижне-Покровская, д. 21</p>
+							<ul>
+								<li>+375 29 643-07-33</li>
+								<li>+375 33 543-07-33</li>
+							</ul>
+						</div>
+						<div class="timetable">
+							<div class="timetable__title">Время работы</div>
+							<p>пн-пт 8:00–20:00</p>
+							<p>сб-вс 8:00–18:00</p>
+						</div>
+						<div class="topper-order">
+							<button type="button" class="button js-popup" data-link="feedback">Записаться на приём</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__in">
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+				<nav class="menu" role="navigation">
+					<ul class="menu__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#" class="is-active">О клинике</a></li>
+						<li><a href="#">Лечение и цены</a></li>
+						<li><a href="#">Врачи</a></li>
+						<li><a href="#">Иногородним</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<button type="button" class="hamburger js-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<nav class="mob-menu js-mob-menu" style="display: none;">
+				<button type="button" class="mob-menu__close js-mob-menu-close"></button>
+				<ul class="mob-menu__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О клинике</a></li>
+					<li><a href="#">Лечение и цены</a></li>
+					<li><a href="#">Врачи</a></li>
+					<li><a href="#">Иногородним</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<button type="button" class="button js-popup" data-link="feedback">Записаться на приём</button>
+			</nav>
+		</div>
+	</header>
+	<div class="main">
+		<!-- sidebar -->
+		<aside class="sidebar">
+			<nav class="nav">
+				<ul>
+					<li><a href="#">Лечение кариеса</a></li>
+					<li><a href="#">Исправление прикуса</a></li>
+					<li><a href="#">Детский стоматолог</a></li>
+					<li><a href="#">Протезирование</a></li>
+					<li><a href="#">Ортодонтия</a></li>
+					<li><a href="#">Парадонтология</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<!--  content -->
+		<div class="content">
+			<!-- breadcrumbs -->
+			<nav class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<!-- contacts -->
+			<div class="contacts">
+				<div class="contacts__topper">
+					<h1 class="h1">Контакты</h1>
+					<button type="button" class="btn btn_green js-popup" data-link="order">Обратная связь</button>
+				</div>
+				<div class="tabs js-tab-group">
+					<ul class="tabs__nav js-tab">
+						<li><a href="tab1"><span>Новополоцк</span></a></li>
+						<li><a href="tab2"><span>Полоцк</span></a></li>
+					</ul>
+					<!-- tab content -->
+					<div class="tabs__content tab1 js-tab-cont">
+						<div class="route">
+							<h3 class="h3">Стоматологическая клиника ЧУМП Космедент г. Полоцк</h3>
+							<ul class="route__table">
+								<li class="route__row">
+									<div class="route__col">Адрес</div>
+									<div class="route__col wide">
+										<p>211415 ул. Нижне-Покровская, д. 21, г. Полоцк, </p>
+										<p>Витебская область, Беларусь</p>
+									</div>
+								</li>
+								<li class="route__row">
+									<div class="route__col">Телефоны</div>
+									<div class="route__col">
+										<a class="number" href="tel:+375 29 643-07-33"><span class="icon-mob"></span> +375 29 643-07-33</a>
+									</div>
+									<div class="route__col">
+										<a class="number" href="tel:+375 33 543-07-33"><span class="icon-mtc"></span> +375 33 543-07-33</a>
+									</div>
+									<div class="route__col">
+										<ul class="number-list">
+											<li><a href="#" class="number"><span class="icon-call"></span> +375 17 243-07-33</a></li>
+											<li><a href="#" class="number">+375 17 243-07-33</a></li>
+											<li><a href="#" class="number"><span class="icon-fax"></span>+375 17 243-07-33</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="route__row">
+									<div class="route__col">Интернет связь</div>
+									<div class="route__col">
+										<a class="number number_viber" href="tel:+375 29 643-07-33"><span class="icon-viber-small"></span> +375 29 643-07-33</a>
+									</div>
+									<div class="route__col">
+										<a class="number number_skype" href="skype:kosmedent"><span class="icon-skype"></span> kosmedent.priem</a>
+									</div>
+									<div class="route__col">
+										<a class="number number_mail" href="skype:kosmedent"><span class="icon-mail"></span> kosmedent.priem@ya.ru</a>
+									</div>
+								</li>
+								<li class="route__row">
+									<div class="route__col">Схема проезда</div>
+									<div class="route__col wide">
+										<p>Координаты: <span>55°29'6"N</span> <span>28°45'53"E</span></p>
+									</div>
+								</li>
+							</ul>
+							<div class="map">
+								<div id="YMapsID"></div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__content tab2 js-tab-cont" style="display: none;">
+						<div class="route">
+							<h3 class="h3">Стоматологическая клиника ЧУМП Космедент г. Полоцк</h3>
+							<ul class="route__table">
+								<li class="route__row">
+									<div class="route__col">Адрес</div>
+									<div class="route__col wide">
+										<p>211415 ул. Нижне-Покровская, д. 21, г. Полоцк, </p>
+										<p>Витебская область, Беларусь</p>
+									</div>
+								</li>
+								<li class="route__row">
+									<div class="route__col">Телефоны</div>
+									<div class="route__col">
+										<a class="number" href="tel:+375 29 643-07-33"><span class="icon-mob"></span> +375 29 643-07-33</a>
+									</div>
+									<div class="route__col">
+										<a class="number" href="tel:+375 33 543-07-33"><span class="icon-mtc"></span> +375 33 543-07-33</a>
+									</div>
+									<div class="route__col">
+										<ul class="number-list">
+											<li><a href="#" class="number"><span class="icon-call"></span> +375 17 243-07-33</a></li>
+											<li><a href="#" class="number">+375 17 243-07-33</a></li>
+											<li><a href="#" class="number"><span class="icon-fax"></span>+375 17 243-07-33</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="route__row">
+									<div class="route__col">Интернет связь</div>
+									<div class="route__col">
+										<a class="number number_viber" href="tel:+375 29 643-07-33"><span class="icon-viber-small"></span> +375 29 643-07-33</a>
+									</div>
+									<div class="route__col">
+										<a class="number number_skype" href="skype:kosmedent"><span class="icon-skype"></span> kosmedent.priem</a>
+									</div>
+									<div class="route__col">
+										<a class="number number_mail" href="skype:kosmedent"><span class="icon-mail"></span> kosmedent.priem@ya.ru</a>
+									</div>
+								</li>
+								<li class="route__row">
+									<div class="route__col">Схема проезда</div>
+									<div class="route__col wide">
+										<p>Координаты: <span>55°29'6"N</span> <span>28°45'53"E</span></p>
+									</div>
+								</li>
+							</ul>
+							<div class="map">
+								<div id="YMapsID2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="footer__right">
+			<div class="tabs js-tab-group">
+				<ul class="tabs__nav js-tab">
+					<li><a href="tab1"><span>Новополоцк</span></a></li>
+					<li><a href="tab2"><span>Полоцк</span></a></li>
+				</ul>
+				<!-- tab content -->
+				<div class="tabs__content tab1 js-tab-cont">
+					<div class="phones">
+						<a class="number" href="tel:+375 29 643-07-33"><span class="icon-mob"></span> +375 29 643-07-33</a>
+						<a class="number" href="tel:+375 33 543-07-33"><span class="icon-mtc"></span> +375 33 543-07-33</a>
+						<a class="number" href="tel:+375 17 243-07-33"><span class="icon-call"></span> +375 17 243-07-33</a>
+						<a class="number number_viber" href="tel:+375 29 643-07-33"><span class="icon-viber"></span> +375 29 643-07-33</a>
+						<a class="number number_skype" href="skype:kosmedent"><span class="icon-skype"></span> kosmedent</a>
+					</div>
+					<a href="#" class="number number_map"><span class="icon-marker"></span> <span>ул. Нижне-Покровская, д. 21</span></a>
+				</div>
+				<div class="tabs__content tab2 js-tab-cont" style="display: none;">
+					<div class="phones">
+						<a class="number" href="tel:+375 29 643-07-33"><span class="icon-mob"></span> +375 29 643-07-33</a>
+						<a class="number" href="tel:+375 33 543-07-33"><span class="icon-mtc"></span> +375 33 543-07-33</a>
+						<a class="number" href="tel:+375 17 243-07-33"><span class="icon-call"></span> +375 17 243-07-33</a>
+						<a class="number number_viber" href="tel:+375 29 643-07-33"><span class="icon-viber"></span> +375 29 643-07-33</a>
+						<a class="number number_skype" href="skype:kosmedent"><span class="icon-skype"></span> kosmedent</a>
+					</div>
+					<a href="#" class="number number_map"><span class="icon-marker"></span> <span>ул. Нижне-Покровская, д. 21</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__left">
+			<div class="copyrights">© 2015  ЧМУП «Космедент»</div>
+		</div>
+	</div>
+</footer>
+<!-- popup -->
+<div class="popup" id="feedback" style="display: none;">
+	<div class="popup__in">
+		<button type="button" class="popup__close js-popup-close"></button>
+		<div class="popup__content">
+			<h1 class="h1">Записаться на прием</h1>
+			<div class="form">
+				<form action="#" class="js-validate">
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Фамилия и имя" name="name" data-validation="required">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="E-mail" name="mail" data-validation="email">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Телефон" name="phone" data-validation="custom" data-validation-regexp="^[-0-9()+ ]+$">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row">
+						<p>Отправить сообщение</p>
+						<label class="radio">
+							<input type="radio" name="clinik-name" >
+							<div>
+								<span>Не важно</span>
+							</div>
+						</label>
+						<label class="radio">
+							<input type="radio" name="clinik-name">
+							<div>
+								<span>ЧУМП Космедент г. Полоцк</span>
+							</div>
+						</label>
+						<label class="radio">
+							<input type="radio" name="clinik-name">
+							<div>
+								<span>ЧУМП Космедент г. Новополоцк</span>
+							</div>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Удобное время" name="time" data-validation="required">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="textarea">
+							<textarea type="text" placeholder="Причина обращения" name="message" data-validation="required"></textarea>
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__submit">
+						<button type="sudmit" class="btn btn_green">Записаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="order" style="display: none;">
+	<div class="popup__in">
+		<button type="button" class="popup__close js-popup-close"></button>
+		<div class="popup__content">
+			<h1 class="h1">Обратная связь</h1>
+			<div class="form">
+				<form action="#" class="js-validate">
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Фамилия и имя" name="name" data-validation="required">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="E-mail" name="mail" data-validation="email">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="input">
+							<input type="text" placeholder="Телефон" name="phone" data-validation="custom" data-validation-regexp="^[-0-9()+ ]+$">
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__row require">
+						<label class="textarea">
+							<textarea type="text" placeholder="Сообщение" name="message" data-validation="required"></textarea>
+							<span class="error__alert">Поле не заполнено</span>
+						</label>
+					</div>
+					<div class="form__submit">
+						<button type="sudmit" class="btn btn_green">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
