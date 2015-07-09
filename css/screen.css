@@ -442,6 +442,9 @@ h5, .h5 { font-size: 15px; }
 .comments .comments__topper:after { content: " "; display: table; clear: both; }
 .comments .comments__topper .h1 { float: left; }
 .comments .comments__topper .btn { float: right; }
+@media only screen and (max-width: 480px) { .comments .comments__topper { text-align: center; margin-bottom: 40px; }
+  .comments .comments__topper .h1 { float: none; margin-bottom: 20px; }
+  .comments .comments__topper .btn { float: none; } }
 .comments .comments__list { padding-left: 4px; }
 .comments .comments__item { margin-bottom: 36px; padding: 25px 38px 35px; background: #f7f7f7; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12); }
 .comments .comments__item .quote { padding: 0 0 0 35px; margin-bottom: 0; }
