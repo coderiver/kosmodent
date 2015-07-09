@@ -51,7 +51,9 @@ $orange: #ec9921
 	background: #f7f7f7
 	text-align: left
 	border-left: 4px solid $green
-	+fregat-i	
+	+fregat-i
+	font-size: 17px
+	line-height: 24px
 	a
 		+font
 		color: #52bb44
@@ -62,7 +64,7 @@ $orange: #ec9921
 body
 	+font 
 	font-size: 15px 
-	line-height: 1.4
+	line-height: 24px
 	color: $dark
 	background: #52bb44
 .center
@@ -85,8 +87,8 @@ body
 // titles
 h1, h2, h3, .h1, .h2, .h3
 	+fregat-b
-	line-height: 1.2
-	margin-bottom: 10px
+	line-height: 1.3
+	margin-bottom: 18px
 h1, .h1
 	font-size: 36px
 	+r(1024)
@@ -126,6 +128,24 @@ h5, .h5
 			width: 100%
 			margin-left: 0
 			text-align: left
+	&.grid_small
+		margin-left: -2%
+		+r(768)	
+			text-align: center
+		+r(480)
+			margin-left: 0	
+		.grid__item
+			width: 23% 	
+			margin-left: 2%
+			+r(768)
+				width: 35%
+				margin-bottom: 25px
+			+r(600)
+				width: 45%
+			+r(480)
+				width: 100%
+				margin-left: 0
+				text-align: left	
 .block-wrap
 	padding-left: 2px			
 .block
@@ -153,7 +173,7 @@ h5, .h5
 	+tr(all 200ms)
 	&:hover, &:active
 		+transform(translateY(6px))
-		background: #52bb44
+		background: #2c7e21
 		color: #fff 
 .btn
 	display: inline-block
@@ -179,7 +199,7 @@ h5, .h5
 	.icon-timing
 		margin-right: 5px	
 .breadcrumbs
-	margin-bottom: 32px
+	margin-bottom: 15px
 	+r(767)
 		text-align: center
 	ul

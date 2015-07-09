@@ -1,5 +1,14 @@
 head.ready(function() {
 
+    // textarea focus event
+
+    $('.textarea textarea').on('focus', function(){
+      $(this).parent('.textarea').addClass('is-focused');
+    });
+    $('.textarea textarea').on('blur', function(){
+      $(this).parent('.textarea').removeClass('is-focused');
+    });    
+
     // map
 
     if ($('.map').length) {
@@ -9,6 +18,7 @@ head.ready(function() {
               zoom: 17,
               controls: []
           });
+          myMap.controls.add('zoomControl');
           myMap.behaviors.disable('scrollZoom');
          // Создаем метку с помощью вспомогательного класса.
             myPlacemark1 = new ymaps.Placemark([55.48504,28.764819], {
@@ -35,6 +45,7 @@ head.ready(function() {
               zoom: 17,
               controls: []
           });
+          myMap.controls.add('zoomControl');
           myMap.behaviors.disable('scrollZoom');
          // Создаем метку с помощью вспомогательного класса.
             myPlacemark1 = new ymaps.Placemark([55.485148,28.766418], {
