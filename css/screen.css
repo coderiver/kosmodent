@@ -46,9 +46,10 @@ h1, h2, h3, .h1, .h2, .h3 { font-family: "FregatBold", sans-serif; font-style: n
 
 h1, .h1 { font-size: 36px; }
 @media only screen and (max-width: 1024px) { h1, .h1 { font-size: 30px; } }
-@media only screen and (max-width: 768px) { h1, .h1 { text-align: center; } }
+@media only screen and (max-width: 767px) { h1, .h1 { text-align: center; } }
 
 h2, .h2 { margin-bottom: 30px; font-size: 24px; }
+@media only screen and (max-width: 767px) { h2, .h2 { text-align: center; } }
 
 h3, .h3 { font-size: 19px; }
 
@@ -190,6 +191,7 @@ h5, .h5 { font-size: 15px; }
 .tabs:after { content: " "; display: table; clear: both; }
 .tabs .tabs__nav { float: left; width: 294px; font-size: 0; padding-top: 40px; }
 @media only screen and (max-width: 1158px) { .tabs .tabs__nav { width: auto; margin-right: 50px; } }
+@media only screen and (max-width: 568px) { .tabs .tabs__nav { margin-right: 0; } }
 .tabs .tabs__nav li { display: inline-block; vertical-align: middle; }
 .tabs .tabs__nav li.is-active a { background: #fff; color: #21310f; }
 .tabs .tabs__nav li.is-active a span { border-bottom: none; }
@@ -242,19 +244,22 @@ h5, .h5 { font-size: 15px; }
   .topper .topper__left { float: none; width: 100%; }
   .topper .topper__right { position: relative; top: auto; right: auto; left: auto; bottom: auto; height: 460px; } }
 
-.nav { padding: 34px 0 57px; background: #d6fec2; }
+.nav { padding: 30px 0 57px; background: #d6fec2; }
 @media only screen and (max-width: 767px) { .nav { text-align: center; } }
-.nav > ul > li > a { display: block; height: 50px; line-height: 53px; padding: 0 10px 0 30px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 17px; text-transform: uppercase; color: #21310f; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
-.nav > ul > li > a:hover, .nav > ul > li > a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
+.nav > ul > li > a { display: block; height: 53px; line-height: 53px; padding: 0 10px 0 30px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 17px; text-transform: uppercase; color: #21310f; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
+.nav > ul > li > a:hover { text-decoration: none; }
+.nav > ul > li > a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
 @media only screen and (max-width: 1024px) { .nav > ul > li > a { height: 45px; line-height: 45px; font-size: 15px; padding: 0 10px 0 25px; } }
 
-.subnav { padding-left: 30px; }
-.subnav > li > a { display: block; padding: 5px 10px 5px 10px; font-size: 15px; color: #21310f; letter-spacing: 1px; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
-.subnav > li > a:hover, .subnav > li > a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
+.subnav { padding-left: 27px; padding-top: 6px; }
+.subnav > li > a { display: block; padding: 6px 10px 5px 10px; font-size: 15px; color: #21310f; letter-spacing: 1px; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
+.subnav > li > a:hover { text-decoration: none; }
+.subnav > li > a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
 @media only screen and (max-width: 1024px) { .subnav > li > a { font-size: 13px; } }
-.subnav > li > ul { padding-left: 10px; }
-.subnav > li > ul li a { display: block; padding: 5px 10px 5px 10px; font-size: 13px; color: #21310f; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
-.subnav > li > ul li a:hover, .subnav > li > ul li a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
+.subnav > li > ul { padding-left: 8px; padding-top: 2px; }
+.subnav > li > ul li a { display: block; padding: 3px 10px 4px 10px; font-size: 13px; color: #21310f; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
+.subnav > li > ul li a:hover { text-decoration: none; }
+.subnav > li > ul li a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
 @media only screen and (max-width: 1024px) { .subnav > li > ul li a { font-size: 12px; } }
 
 .hamburger { display: none; position: relative; float: right; width: 55px; height: 48px; padding: 10px; background: #52bb44; }
@@ -357,11 +362,13 @@ h5, .h5 { font-size: 15px; }
 .content { overflow: hidden; padding-right: 28px; padding-bottom: 65px; }
 .content .h1 { margin-bottom: 13px; }
 .content p { margin-bottom: 25px; font-size: 17px; color: #969696; }
-@media only screen and (max-width: 767px) { .content { -webkit-order: 1; order: 1; padding: 20px 10px 30px; } }
+@media only screen and (max-width: 767px) { .content { -webkit-order: 1; order: 1; padding: 20px 10px 30px; }
+  .content p { text-align: center; } }
 
 .article { display: block; margin-bottom: 40px; }
 @media only screen and (max-width: 767px) { .article { text-align: center; } }
 .article h2 { margin: 35px 0 30px; }
+.article h3 { margin-bottom: 25px; }
 .article p { color: #21310f; font-size: 15px; margin-bottom: 20px; }
 .article img { width: 100%; margin: 0 0 26px 0; }
 .article img[align="left"] { width: 50%; float: left; margin: 0 25px 25px 0; }
@@ -369,8 +376,8 @@ h5, .h5 { font-size: 15px; }
 .article a { color: #ec9921; text-decoration: underline; }
 .article a:hover { text-decoration: none; }
 .article ul { margin-bottom: 40px; text-align: left; }
-.article ul li { position: relative; padding-left: 57px; margin-bottom: 10px; }
-.article ul li:before { content: ""; position: absolute; top: 9px; left: 0; width: 36px; height: 1px; background: #ec9921; }
+.article ul li { position: relative; padding-left: 57px; margin-bottom: 15px; }
+.article ul li:before { content: ""; position: absolute; top: 13px; left: 0; width: 36px; height: 1px; background: #ec9921; }
 .article blockquote { display: block; margin-bottom: 20px; padding: 25px 35px; background: #f7f7f7; text-align: left; border-left: 4px solid #52bb44; font-family: "FregatItalic", sans-serif; font-style: normal; font-weight: normal; font-size: 17px; line-height: 24px; }
 .article blockquote a { font-family: "HelveticaNeueCyr-Roman", sans-serif; font-style: normal; font-weight: normal; color: #52bb44; text-decoration: underline; }
 .article blockquote a:hover { text-decoration: none; }
@@ -381,10 +388,11 @@ h5, .h5 { font-size: 15px; }
 @media only screen and (max-width: 900px) { .adv .adv__item { width: 100%; } }
 .adv .adv__icon { width: 81px; float: left; margin-right: 7%; }
 .adv .adv__text { overflow: hidden; padding-right: 7%; }
-.adv .adv__text p { font-size: 15px; color: #21310f; }
+.adv .adv__text p { font-size: 15px; color: #21310f; text-align: left; }
 
+.history > p { margin-bottom: 25px; }
 .history .history__list { font-size: 0; }
-.history .history__list .history__item { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 25px; padding-right: 10%; }
+.history .history__list .history__item { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 30px; padding-right: 10%; }
 .history .history__list .history__item p { margin-bottom: 0; font-size: 15px; color: #21310f; }
 @media only screen and (max-width: 900px) { .history .history__list .history__item { width: 100%; padding-right: 0; } }
 .history .history__list .history__year { position: relative; font-family: "FregatRegular", sans-serif; font-style: normal; font-weight: normal; font-size: 36px; padding-bottom: 15px; margin-bottom: 15px; }
@@ -415,7 +423,8 @@ h5, .h5 { font-size: 15px; }
 .pagination ul li a { display: block; width: 47px; height: 38px; line-height: 38px; background: #ec9921; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 15px; color: #21310f; text-decoration: none; -moz-transition: color 300ms; -o-transition: color 300ms; -webkit-transition: color 300ms; transition: color 300ms; }
 .pagination ul li a:hover, .pagination ul li a.is-active { color: #fff; }
 
-.fancybox-close { position: absolute; top: -33px; right: -48px; background: url('../img/icons-s43f6cca6e6.png') 0 -713px no-repeat; width: 30px; height: 30px; cursor: pointer; z-index: 8040; }
+.fancybox-close { position: absolute; top: -33px; right: -48px; background: url('../img/icons-s43f6cca6e6.png') 0 -677px no-repeat; width: 26px; height: 26px; cursor: pointer; z-index: 8040; opacity: 0.7; -moz-transition: opacity 300ms; -o-transition: opacity 300ms; -webkit-transition: opacity 300ms; transition: opacity 300ms; }
+.fancybox-close:hover { opacity: 1; }
 @media only screen and (max-width: 1024px) { .fancybox-close { display: none; } }
 
 .fancybox-nav { position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background: transparent url("../img/blank.gif"); -webkit-tap-highlight-color: transparent; z-index: 8040; }
@@ -444,7 +453,8 @@ h5, .h5 { font-size: 15px; }
 .popup { position: fixed; top: 0; bottom: 0; right: 0; left: 0; background: rgba(0, 0, 0, 0.7); text-align: center; font-size: 0; overflow-y: auto; z-index: 999; }
 .popup:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .popup .popup__in { position: relative; display: inline-block; vertical-align: middle; background: #fff; width: 600px; padding: 55px 48px 50px; }
-@media only screen and (max-width: 700px) { .popup .popup__in { max-width: 94%; padding: 55px 28px 30px; } }
+@media only screen and (max-width: 700px) { .popup .popup__in { width: 100%; padding: 55px 28px 30px; } }
+@media only screen and (max-width: 480px) { .popup .popup__in { padding: 55px 16px 30px; } }
 .popup .popup__close { position: absolute; top: -31px; right: -48px; background: url('../img/icons-s43f6cca6e6.png') 0 -677px no-repeat; width: 26px; height: 26px; opacity: 0.7; -moz-transition: opacity 300ms; -o-transition: opacity 300ms; -webkit-transition: opacity 300ms; transition: opacity 300ms; }
 .popup .popup__close:hover { opacity: 1; }
 @media only screen and (max-width: 1024px) { .popup .popup__close { top: 20px; right: 20px; background: url('../img/icons-s43f6cca6e6.png') 0 -641px no-repeat; width: 26px; height: 26px; opacity: 1; } }
@@ -499,7 +509,7 @@ h5, .h5 { font-size: 15px; }
 .accordeon .accordeon__item.is-active .accordeon__topper { background: #ec9921; color: #fff; }
 .accordeon .accordeon__item.is-active .accordeon__topper:before { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); border-color: #fff transparent transparent transparent; }
 @media only screen and (max-width: 568px) { .accordeon .accordeon__item.is-active .accordeon__title { border-bottom: none; } }
-.accordeon .accordeon__topper { position: relative; padding: 25px 45px 25px 100px; border: 1px solid #ec9921; border-width: 0 1px 1px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; color: #21310f; *zoom: 1; cursor: pointer; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
+.accordeon .accordeon__topper { position: relative; padding: 28px 45px 26px 100px; border: 1px solid #ec9921; border-width: 0 1px 1px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; color: #21310f; *zoom: 1; cursor: pointer; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
 .accordeon .accordeon__topper:after { content: " "; display: table; clear: both; }
 .accordeon .accordeon__topper:before { content: ""; position: absolute; top: 50%; left: 41px; margin-top: -4px; width: 0px; height: 0px; border-style: solid; border-width: 8px 9px 0 9px; border-color: #21310f transparent transparent transparent; -moz-transition: all 300ms; -o-transition: all 300ms; -webkit-transition: all 300ms; transition: all 300ms; }
 .accordeon .accordeon__topper:hover { background: #fbb959; }
@@ -513,7 +523,7 @@ h5, .h5 { font-size: 15px; }
 .accordeon .accordeon__payment { float: right; padding-top: 4px; font-size: 17px; }
 @media only screen and (max-width: 900px) { .accordeon .accordeon__payment { font-size: 15px; } }
 @media only screen and (max-width: 568px) { .accordeon .accordeon__payment { float: none; } }
-.accordeon .accordeon__content { border: 1px solid #ec9921; border-width: 0 1px 1px; padding: 42px; }
+.accordeon .accordeon__content { border: 1px solid #ec9921; border-width: 0 1px 1px; padding: 43px 45px; }
 @media only screen and (max-width: 900px) { .accordeon .accordeon__content { padding: 30px; } }
 @media only screen and (max-width: 568px) { .accordeon .accordeon__content { padding: 20px; } }
 
@@ -529,9 +539,10 @@ h5, .h5 { font-size: 15px; }
 @media only screen and (max-width: 600px) { .partners .partners__content { display: block; width: 100%; } }
 .partners .partners__title { font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 24px; margin-bottom: 20px; }
 
-.treatment .treatment__img { margin-bottom: 20px; font-size: 0; border-radius: 3px; box-shadow: 0 1px 1px rgba(157, 212, 228, 0.9); }
+.treatment .treatment__img { margin-bottom: 20px; font-size: 0; border-radius: 3px; line-height: 1; box-shadow: 0 1px 1px rgba(157, 212, 228, 0.9); }
 .treatment .treatment__img img { width: 100%; }
-.treatment .treatment__title { margin-bottom: 15px; color: #52bb44; font-size: 17px; font-family: "FregatRegular", sans-serif; font-style: normal; font-weight: normal; }
+.treatment .treatment__title { display: inline-block; margin-bottom: 15px; color: #52bb44; font-size: 17px; font-family: "FregatRegular", sans-serif; font-style: normal; font-weight: normal; text-decoration: none; }
+.treatment .treatment__title:hover { text-decoration: underline; }
 .treatment .treatment__list li { position: relative; padding-left: 28px; margin-bottom: 15px; }
 .treatment .treatment__list li:before { content: ""; position: absolute; top: 9px; left: 0; width: 15px; height: 1px; background: #cecece; }
 .treatment .treatment__list li a { color: #acacac; font-size: 15px; text-decoration: underline; }
@@ -550,6 +561,8 @@ h5, .h5 { font-size: 15px; }
 .price .price__value { display: table-cell; text-align: right; vertical-align: middle; padding: 20px 40px 20px 0; }
 @media only screen and (max-width: 568px) { .price .price__value { display: inline-block; text-align: center; padding: 20px; } }
 
+.doctors .h1 { margin-bottom: 25px; }
+.doctors > p { margin-bottom: 35px; }
 .doctors .doctors__list { padding-left: 4px; }
 .doctors .doctors__item { display: table; width: 100%; margin-bottom: 35px; border-collapse: collapse; table-layout: fixed; background: #f7f7f7; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12); }
 @media only screen and (max-width: 480px) { .doctors .doctors__item { display: block; text-align: center; } }
@@ -588,6 +601,7 @@ h5, .h5 { font-size: 15px; }
 .nonres .nonres__list li { position: relative; display: inline-block; vertical-align: top; width: 50%; margin-bottom: 15px; padding-left: 28px; }
 .nonres .nonres__list li:before { content: ""; position: absolute; top: 10px; left: 0; width: 13px; height: 1px; background: #52bb44; }
 .nonres .nonres__list li a { font-size: 15px; color: #52bb44; letter-spacing: 0.5px; }
+.nonres .nonres__list li a:hover { text-decoration: none; }
 @media only screen and (max-width: 600px) { .nonres .nonres__list li { width: 100%; padding-left: 0; }
   .nonres .nonres__list li:before { display: none; } }
 
@@ -597,22 +611,31 @@ h5, .h5 { font-size: 15px; }
 .route .route__row { font-size: 0; border-top: 1px solid #cecece; padding: 30px 0; }
 .route .route__row:first-child { border-top: none; }
 .route .route__col { display: inline-block; vertical-align: top; width: 25%; font-size: 17px; color: #969696; padding-right: 5px; }
-.route .route__col p { color: #21310f; margin-bottom: 0; font-size: 15px; }
+.route .route__col p { color: #21310f; margin-bottom: 0; font-size: 15px; text-align: left; }
 .route .route__col p span { display: inline-block; margin-left: 10px; }
-.route .route__col a { color: #ec9921; }
+.route .route__col a { color: #ec9921; font-size: 15px; }
 .route .route__col a:hover { text-decoration: none; }
 .route .route__col a.number { font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; color: #21310f; margin-left: 0; }
 .route .route__col a.number.number_viber { color: #b580e0; }
 .route .route__col a.number.number_skype { font-family: "HelveticaNeueCyr-Roman", sans-serif; font-style: normal; font-weight: normal; font-size: 15px; color: #00aeec; }
-.route .route__col a.number.number_mail { font-family: "HelveticaNeueCyr-Roman", sans-serif; font-style: normal; font-weight: normal; color: #ec9921; }
+.route .route__col a.number.number_mail { font-family: "HelveticaNeueCyr-Roman", sans-serif; font-style: normal; font-weight: normal; color: #ec9921; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .route .route__col.small { width: 16%; }
-.route .route__col.wide { width: 84%; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+.route .route__col.wide { width: 84%; font-size: 0; }
+.route .route__col.wide .route__col.info { width: 33.3%; }
 .route .route__col.info { width: 28%; }
 .route .route__col.wide-link { width: 75%; }
-@media only screen and (max-width: 1024px) { .route .route__col { width: 50%; font-size: 15px; margin-bottom: 5px; }
-  .route .route__col p { font-size: 15px; }
-  .route .route__col.wide { width: 100%; } }
-@media only screen and (max-width: 480px) { .route .route__col { width: 100%; } }
+.route .route__col.wide-link a { display: inline-block; max-width: 100%; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
+@media only screen and (max-width: 1024px) { .route .route__col { font-size: 15px; margin-bottom: 5px; }
+  .route .route__col p { font-size: 15px; } }
+@media only screen and (max-width: 768px) { .route .route__col.wide { width: 75%; }
+  .route .route__col.wide .route__col.info { width: 100%; display: block; margin-bottom: 5px; }
+  .route .route__col.wide .route__col.info .number { margin-bottom: 0; }
+  .number-list .route .route__col.wide .route__col.info .number { margin-bottom: 5px; }
+  .route .route__col.small { width: 25%; }
+  .route .route__col.info { width: 75%; } }
+@media only screen and (max-width: 480px) { .route.route_nonres .route__col { width: 40%; }
+  .route.route_nonres .route__col.wide, .route.route_nonres .route__col.wide-link { width: 60%; }
+  .route.route_nonres .route__col.wide .route__col.info, .route.route_nonres .route__col.wide-link .route__col.info { width: 100%; } }
 
 .map { position: relative; height: 390px; }
 .map > div { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
@@ -621,9 +644,14 @@ h5, .h5 { font-size: 15px; }
 .contacts .contacts__topper:after { content: " "; display: table; clear: both; }
 .contacts .contacts__topper .h1 { float: left; margin-bottom: 35px; }
 .contacts .contacts__topper .btn { float: right; }
+@media only screen and (max-width: 480px) { .contacts .contacts__topper { text-align: center; margin-bottom: 40px; }
+  .contacts .contacts__topper .h1 { float: none; margin-bottom: 20px; }
+  .contacts .contacts__topper .btn { float: none; } }
 .contacts .tabs .tabs__nav { width: auto; padding-top: 0; }
+@media only screen and (max-width: 600px) { .contacts .tabs .tabs__nav { width: 100%; text-align: center; } }
 .contacts .tabs .tabs__nav li a { width: 195px; text-align: center; color: #21310f; height: 37px; line-height: 37px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; text-transform: uppercase; font-size: 15px; }
 .contacts .tabs .tabs__nav li a:hover span { border-bottom: none; }
+@media only screen and (max-width: 600px) { .contacts .tabs .tabs__nav li a { width: auto; padding: 0 35px; } }
 .contacts .tabs .tabs__nav li.is-active a { background: #fdbe61; }
 .contacts .tabs .tabs__content { clear: both; *zoom: 1; padding-top: 46px; overflow: visible; }
 .contacts .tabs .tabs__content:after { content: " "; display: table; clear: both; }

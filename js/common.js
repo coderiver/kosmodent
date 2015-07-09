@@ -31,24 +31,23 @@ head.ready(function() {
                 // Стандартная фиолетовая иконка.
                 iconLayout: 'default#image',
                 iconImageSize: [37, 48],
-                iconImageHref: '../img/marker.png'
+                iconImageHref: 'img/marker.png'
 
             });
 
          myMap.geoObjects.add(myPlacemark1)
 
-        });
 
-        ymaps.ready(function () {
-          var myMap = new ymaps.Map('YMapsID2', {
+
+         var myMap2 = new ymaps.Map('YMapsID2', {
               center: [55.48504,28.764819],
               zoom: 17,
               controls: []
           });
-          myMap.controls.add('zoomControl');
-          myMap.behaviors.disable('scrollZoom');
+          myMap2.controls.add('zoomControl');
+          myMap2.behaviors.disable('scrollZoom');
          // Создаем метку с помощью вспомогательного класса.
-            myPlacemark1 = new ymaps.Placemark([55.485148,28.766418], {
+            myPlacemark2 = new ymaps.Placemark([55.485148,28.766418], {
                 // Свойства.
 
                 balloonContent: 'ЖД вокзал',
@@ -58,13 +57,16 @@ head.ready(function() {
                 // Стандартная фиолетовая иконка.
                 iconLayout: 'default#image',
                 iconImageSize: [37, 48],
-                iconImageHref: '../img/marker.png'
+                iconImageHref: 'img/marker.png'
 
             });
 
-         myMap.geoObjects.add(myPlacemark1)
+         myMap2.geoObjects.add(myPlacemark2)
 
         });
+
+          
+
     };
 
     // accordeon
