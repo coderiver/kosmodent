@@ -147,16 +147,33 @@ head.ready(function() {
   	tab();
 
   	// slider
-    $('.js-slider').on('init', function(event, slick){
-      $(this).addClass('is-loaded');
-    });
+    function slickInit(){
+          $('.js-slider').on('init', function(event, slick){
+            $(this).addClass('is-loaded');
+          });
 
-  	$('.js-slider').slick({
-  		dots: true,
-      adaptiveHeight: true,
-  		autoplay: true,
-		  autoplaySpeed: 5000
-  	});
+          $('.js-slider').slick({
+            dots: true,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000
+          });
+    }
+    slickInit();
+
+
+    $(window).resize(function(){
+        if ($(window).width() < 768) {
+            if (!$('.js-slider').hasClass('is-mobile')) {
+                $('.js-slider').slick('unslick');
+                slickInit();
+                $('.js-slider').addClass('is-mobile');
+            };
+        }
+        else {
+            $('.js-slider').removeClass('is-mobile');
+        }
+    });
 
   	// mobile nav
 

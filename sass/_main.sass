@@ -202,8 +202,9 @@
 				+r(1024)	
 					height: 45px
 					line-height: 45px 
-					font-size: 15px
 					padding: 0 10px 0 25px
+				+r(767)
+					font-size: 19px	
 .subnav
 	padding-left: 27px 
 	padding-top: 6px
@@ -401,9 +402,8 @@
 	+r(1024)
 		margin-bottom: 30px			  		 		
 .news
-	&.news_index
-		+r(480)
-			padding: 0 22px
+	+r(480)
+		padding: 0 22px
 	.h1
 		+r(767)
 			text-align: center			  	
@@ -436,7 +436,9 @@
 			min-height: 100%
 			border-radius: 3px
 	.date
-		margin-bottom: 39px		
+		margin-bottom: 39px
+		+r(767)
+			text-align: center		
 	.news__all
 		text-align: center	 
 // footer
@@ -610,6 +612,8 @@
 
 // advantages
 .adv
+	+r(767)
+		padding: 0 8px 
 	.adv__list
 		font-size: 0
 	.adv__item
@@ -620,6 +624,8 @@
 		margin-bottom: 30px
 		+r(900)
 			width: 100% 
+		+r(767)
+			margin-bottom: 10px
 	.adv__icon
 		width: 81px
 		float: left
@@ -631,6 +637,11 @@
 			font-size: 15px
 			color: $dark
 			text-align: left
+		+r(767)
+			.h3
+				margin-bottom: 8px
+			p
+				margin-bottom: 0	 	
 .history
 	& > p
 		margin-bottom: 25px
@@ -1047,7 +1058,21 @@
 					border-color: #fff transparent transparent transparent
 			.accordeon__title
 				+r(568)
-					border-bottom: none 
+					border-bottom: none
+		.article
+			margin-bottom: 0
+			+r(600)
+				h3
+					margin-bottom: 15px
+				ul
+					text-align: center
+					margin-bottom: 25px
+					li
+						padding-left: 0
+						margin-bottom: 10px
+						&:before
+							display: none
+						 
 	.accordeon__topper
 		position: relative
 		padding: 28px 45px 26px 100px 
@@ -1101,7 +1126,7 @@
 		+r(900)
 			padding: 30px
 		+r(568)
-			padding: 20px 	 	 						  		 	
+			padding: 30px 10px 	 	 						  		 	
 
 // partners
 .partners
@@ -1245,7 +1270,8 @@
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12)
 		+r(480)
 			display: block
-			text-align: center 
+			text-align: center
+			margin-bottom: 16px 
 	.doctors__img
 		display: table-cell
 		vertical-align: top
@@ -1257,7 +1283,7 @@
 			height: 100%  
 		+r(480)
 			display: block
-			padding-top: 20px
+			padding-top: 30px
 			width: 100%
 			img
 				height: auto	
@@ -1266,22 +1292,27 @@
 		vertical-align: top
 		padding: 32px
 		+r(960)
-			padding: 17px  
+			padding: 17px 17px 45px 
 		+r(480)
 			display: block	
 	.doctors__name
 		+fregat-b
 		font-size: 24px
-		margin-bottom: 20px
+		margin-bottom: 15px
+		+r(767)
+			font-size: 19px
+			margin-bottom: 10px
 	.doctors__job
 		font-size: 15px
-		margin-bottom: 30px
+		margin-bottom: 20px
 		
 .doctor
 	.doctor__topper
 		+clr
 		padding-left: 2px
 		margin-bottom: 30px
+		+r(767)
+			margin-bottom: 10px
 		+r(568)
 			text-align: center
 	.doctor__img
@@ -1291,6 +1322,7 @@
 		font-size: 0
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12)
 		img
+			display: block
 			width: 100%
 			max-width: 212px
 			height: auto
@@ -1305,6 +1337,9 @@
 		p
 			font-size: 15px
 			color: $dark
+		+r(767)
+			p
+				margin-bottom: 10px 	
 		+r(568)
 			overflow: visible
 			display: block	
@@ -1317,7 +1352,19 @@
 		strong
 			+fregat-b
 			font-size: 19px
-
+	.doctor__education
+		.h3
+			+r(767)
+				margin-bottom: 10px 
+	.article
+		+r(568)
+			ul
+				text-align: center
+				li
+					padding-left: 0
+					margin-bottom: 10px
+					&:before
+						display: none			
 // nonres
 .nonres
 	display: table
@@ -1376,8 +1423,11 @@
 			+r(600)
 				width: 100%
 				padding-left: 0
+				margin-bottom: 8px
 				&:before
-					display: none 		 
+					display: none
+				a
+					font-size: 17px	 		 
 .route
 	.h1
 		margin-bottom: 30px
