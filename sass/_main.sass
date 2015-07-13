@@ -182,12 +182,33 @@
 	+r(767)
 		text-align: center
 	& > ul
-		& > li
+		.nav__item
+			position: relative
+			&.nav__item_sub
+				&:before
+					content: ""
+					position: absolute
+					top: 20px
+					right: 10px
+					+s(more)
+					display: none
+				&:after
+					content: ""
+					position: absolute
+					top: 20px
+					left: 10px
+					+s(back)
+					display: none
+				&.is-open
+					&:before
+						display: none
+					&:after
+						display: block
+			&.is-hidden
+				display: none				
 			& > a
 				display: block
-				height: 53px
-				line-height: 53px
-				padding: 0 10px 0 30px 
+				padding: 16px 10px 15px 30px 
 				+fregat-b
 				font-size: 17px
 				text-transform: uppercase
@@ -199,16 +220,16 @@
 					background: #2c7e21
 					color: #fff
 					text-decoration: none
-				+r(1024)	
-					height: 45px
-					line-height: 45px 
-					padding: 0 10px 0 25px
-				+r(767)
+			+r(767)
+				&.nav__item_sub
+					&:before
+						display: block
+				& > a
 					font-size: 19px	
 .subnav
 	padding-left: 27px 
 	padding-top: 6px
-	& > li
+	& > div
 		& > a
 			display: block
 			padding: 6px 10px 5px 10px
@@ -241,7 +262,24 @@
 						color: #fff
 						text-decoration: none
 					+r(1024)
-						font-size: 12px								
+						font-size: 12px 
+	+r(767)
+		display: none
+		background: #d6fec2
+		padding: 6px 10px 
+		text-align: left
+		z-index: 2
+		& > div
+			& > a
+				font-size: 17px
+				padding: 12px 10px 12px 10px  
+			& > ul
+				li
+					a
+						font-size: 16px	
+						padding: 10px 10px 10px 10px 
+		&.is-open
+			display: block																						
 .hamburger
 	display: none
 	position: relative
@@ -423,7 +461,9 @@
 				p
 					color: $orange
 			.date
-				margin-bottom: 0				
+				margin-bottom: 0
+				+r(767)
+					text-align: left				
 	.news__img
 		margin-bottom: 18px
 		width: 100%
@@ -435,6 +475,10 @@
 			min-width: 100%
 			min-height: 100%
 			border-radius: 3px
+		+r(768)
+			height: auto
+			img
+				width: 100% 	
 	.date
 		margin-bottom: 39px
 		+r(767)

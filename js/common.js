@@ -1,5 +1,24 @@
 head.ready(function() {
 
+    // submenu
+
+    $('.js-submenu').on('click', function(){
+      if ($(this).hasClass('is-active')) {
+        $('.nav__item').removeClass('is-hidden');
+        $(this).removeClass('is-active');
+        $(this).parent('.nav__item').removeClass('is-open');
+        $(this).parent('li').find('.subnav').removeClass('is-open');
+      }
+      else {
+        $('.nav__item').addClass('is-hidden');
+        $(this).addClass('is-active');
+        $(this).parent('.nav__item').removeClass('is-hidden').addClass('is-open');
+        $(this).parent('li').find('.subnav').addClass('is-open');
+      }
+    
+      return false;
+    });  
+
     // textarea focus event
 
     $('.textarea textarea').on('focus', function(){
