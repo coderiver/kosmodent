@@ -661,7 +661,9 @@ h5, .h5 { font-size: 15px; }
 .route .route__row:first-child { border-top: none; }
 .route .route__col { display: inline-block; vertical-align: top; width: 25%; font-size: 17px; color: #969696; padding-right: 5px; }
 .route .route__col p { color: #21310f; margin-bottom: 0; font-size: 15px; text-align: left; }
-.route .route__col p span { display: inline-block; margin-left: 10px; }
+.route .route__col p i { display: inline-block; font-style: normal; margin-right: 10px; }
+@media only screen and (max-width: 768px) { .route .route__col p i { display: block; } }
+.route .route__col p span { display: inline-block; margin-right: 10px; }
 .route .route__col a { color: #ec9921; font-size: 15px; }
 .route .route__col a:hover { text-decoration: none; }
 .route .route__col a.number { font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; color: #21310f; margin-left: 0; }
