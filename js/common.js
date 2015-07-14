@@ -37,8 +37,13 @@ head.ready(function() {
               zoom: 17,
               controls: []
           });
-          myMap.controls.add('zoomControl');
+
           myMap.behaviors.disable('scrollZoom');
+
+          myMap.controls.add('zoomControl', {
+            position: {top: 15, left: 15}
+          });
+          
          // Создаем метку с помощью вспомогательного класса.
             myPlacemark1 = new ymaps.Placemark([55.48504,28.764819], {
                 // Свойства.
@@ -63,8 +68,14 @@ head.ready(function() {
               zoom: 17,
               controls: []
           });
-          myMap2.controls.add('zoomControl');
-          myMap2.behaviors.disable('scrollZoom');
+
+         myMap2.behaviors.disable('scrollZoom');
+
+          myMap2.controls.add('zoomControl', {
+            position: {top: 15, left: 15}
+          });
+          
+
          // Создаем метку с помощью вспомогательного класса.
             myPlacemark2 = new ymaps.Placemark([55.485148,28.766418], {
                 // Свойства.

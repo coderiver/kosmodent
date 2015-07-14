@@ -650,11 +650,11 @@ h5, .h5 { font-size: 15px; }
 .nonres .nonres__img img { max-width: 90%; }
 @media only screen and (max-width: 900px) { .nonres .nonres__img { width: 150px; } }
 @media only screen and (max-width: 600px) { .nonres .nonres__img { display: block; width: 100%; padding-top: 20px; } }
-.nonres .nonres__content { display: table-cell; vertical-align: top; padding: 32px 32px 32px 0; }
-.nonres .nonres__content .h2 { margin-bottom: 20px; }
+.nonres .nonres__content { display: table-cell; vertical-align: top; padding: 28px 32px 52px 0; }
+.nonres .nonres__content .h2 { margin-bottom: 15px; }
 @media only screen and (max-width: 600px) { .nonres .nonres__content { display: block; padding: 20px; } }
 .nonres .nonres__list { font-size: 0; }
-.nonres .nonres__list li { position: relative; display: inline-block; vertical-align: top; width: 50%; margin-bottom: 15px; padding-left: 28px; }
+.nonres .nonres__list li { position: relative; display: inline-block; vertical-align: top; width: 50%; margin-bottom: 6px; padding-left: 28px; }
 .nonres .nonres__list li:before { content: ""; position: absolute; top: 10px; left: 0; width: 13px; height: 1px; background: #52bb44; }
 .nonres .nonres__list li a { font-size: 15px; color: #52bb44; letter-spacing: 0.5px; }
 .nonres .nonres__list li a:hover { text-decoration: none; }
@@ -696,7 +696,7 @@ h5, .h5 { font-size: 15px; }
   .route.route_nonres .route__col.wide, .route.route_nonres .route__col.wide-link { width: 60%; }
   .route.route_nonres .route__col.wide .route__col.info, .route.route_nonres .route__col.wide-link .route__col.info { width: 100%; } }
 
-.map { position: relative; height: 390px; }
+.map { position: relative; padding-bottom: 50%; }
 .map > div { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
 
 .contacts .contacts__topper { *zoom: 1; }
