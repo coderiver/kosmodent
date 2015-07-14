@@ -118,7 +118,7 @@ head.ready(function() {
     $('.popup').on('click', function(event){
         $(this).fadeOut('fast');
     });
-    $('.popup__in').on('click', function(){
+    $('.popup__in').on('click', function(event){
         event.stopPropagation();
     });
 

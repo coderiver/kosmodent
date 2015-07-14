@@ -181,6 +181,7 @@
 	background: #d6fec2 
 	+r(767)
 		text-align: center
+		padding: 25px 0 36px 
 	& > ul
 		.nav__item
 			position: relative
@@ -725,6 +726,11 @@
 				width: 82px
 				height: 4px
 				background: $orange
+			+r(767)
+				text-align: center
+				&:after
+					left: 50%
+					margin-left: -41px	
 .license
 	.h1
 		margin-bottom: 30px
@@ -1018,6 +1024,8 @@
 			border-color: #2d5a23
 			+placeholder
 				font-size: 0
+		&.error
+			text-align: left		
 	.error__alert
 		display: none
 		position: absolute
@@ -1027,10 +1035,10 @@
 		font-size: 13px
 		color: #ff0000 		
 	&.has-error
-		input
+		input, textarea
 			border-color: #ff0000
 		.error__alert
-			display: block
+			display: block		
 .textarea
 	position: relative
 	&:after
@@ -1041,14 +1049,28 @@
 		+arr(13, 9, #cecece, br)
 		pointer-events: none
 		+tr(border-color 300ms)
+	.ff &
+		&:after
+			+arr(19, 14, #cecece, br)
+		&.is-focused
+			&:after
+				+arr(19, 14, #2d5a23, br)	
+		&.has-error
+			&:after
+				+arr(19, 14, #ff0000, br)		
 	&.is-focused
 		&:after
-			+arr(13, 9, #2d5a23, br)	 
+			+arr(13, 9, #2d5a23, br)
+	&.has-error
+		&:after
+			+arr(13, 9, #ff0000, br)			 
 	textarea
 		padding: 16px 
 		max-width: 100%
 		min-width: 100%
 		max-height: 200px
+	.error__alert
+		bottom: -14px	
 .radio-wrap
 	+clr
 	text-align: left
@@ -1072,7 +1094,7 @@
 		&:before
 			content: ""
 			position: absolute
-			top: 0
+			top: 2px
 			left: 0
 			width: 17px
 			height: 17px
@@ -1093,7 +1115,7 @@
 		&:after
 			content: ""
 			position: absolute
-			top: 6px
+			top: 8px
 			left: 6px
 			width: 5px
 			height: 5px
