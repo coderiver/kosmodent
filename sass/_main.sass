@@ -707,6 +707,7 @@
 		overflow: hidden
 		padding-right: 7%
 		p
+			margin-bottom: 0
 			font-size: 15px
 			color: $dark
 			text-align: left
@@ -1004,9 +1005,11 @@
 	.popup__content
 		.h1
 			text-align: center
-			margin-bottom: 40px
-			+r(600)
-				margin-bottom: 20px
+			margin-bottom: 20px
+			font-size: 36px
+		.form
+			.form__row
+				margin-bottom: -2px	
 .form
 	.form__row
 		position: relative
@@ -1131,7 +1134,7 @@
 			border: 1px solid #cecece 
 		span
 			display: block
-			margin-bottom: 5px 
+			margin-bottom: 2px 
 			font-size: 15px
 			color: $dark
 		p
@@ -1412,6 +1415,7 @@
 			img
 				height: auto	
 	.doctors__info
+		position: relative
 		display: table-cell
 		vertical-align: top
 		padding: 32px
@@ -1429,6 +1433,17 @@
 	.doctors__job
 		font-size: 15px
 		margin-bottom: 20px
+	.btn
+		position: absolute
+		bottom: 32px
+		left: 32px
+		+r(960)
+			bottom: 45px
+			left: 17px
+		+r(480)
+			position: relative
+			bottom: auto
+			left: auto		
 		
 .doctor
 	.doctor__topper
