@@ -257,8 +257,9 @@ h5, .h5 { font-size: 15px; }
 .nav > ul .nav__item > a { display: block; padding: 16px 10px 15px 30px; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; font-size: 17px; text-transform: uppercase; color: #21310f; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
 .nav > ul .nav__item > a:hover { text-decoration: none; }
 .nav > ul .nav__item > a.is-active { background: #2c7e21; color: #fff; text-decoration: none; }
+@media only screen and (max-width: 768px) { .nav > ul .nav__item > a { font-size: 15px; padding: 11px 10px 10px 30px; } }
 @media only screen and (max-width: 767px) { .nav > ul .nav__item.nav__item_sub:before { display: block; }
-  .nav > ul .nav__item > a { font-size: 19px; } }
+  .nav > ul .nav__item > a { padding: 16px 10px 15px 30px; font-size: 19px; } }
 
 .subnav { padding-left: 27px; padding-top: 6px; }
 .subnav > div > a { display: block; padding: 6px 10px 5px 10px; font-size: 15px; color: #21310f; letter-spacing: 1px; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
@@ -345,8 +346,10 @@ h5, .h5 { font-size: 15px; }
 
 .footer .footer__in { *zoom: 1; max-width: 1158px; margin: 0 auto; padding: 36px 0 24px; background: #2d5a23; }
 .footer .footer__in:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 768px) { .footer .footer__in { padding: 25px 0; } }
 .footer .footer__left { float: left; width: 247px; margin-right: 47px; padding-top: 16px; padding-left: 30px; }
 @media only screen and (max-width: 1158px) { .footer .footer__left { float: none; width: 100%; padding-left: 0; margin-right: 0; text-align: center; } }
+@media only screen and (max-width: 768px) { .footer .footer__left { padding-top: 21px; } }
 .footer .footer__right { float: right; width: 848px; padding-right: 30px; padding-top: 13px; }
 .footer .footer__right .tabs .tabs__nav { padding-top: 0; }
 .footer .footer__right .tabs .tabs__content { clear: both; max-width: 572px; padding-top: 26px; *zoom: 1; overflow: visible; }
@@ -354,7 +357,11 @@ h5, .h5 { font-size: 15px; }
 @media only screen and (max-width: 1158px) { .footer .footer__right { float: none; width: 100%; text-align: center; padding-right: 0; }
   .footer .footer__right .tabs .tabs__nav { float: none; margin-right: 0; }
   .footer .footer__right .tabs .tabs__content { max-width: 75%; margin: 0 auto; } }
-@media only screen and (max-width: 768px) { .footer .footer__right .tabs .tabs__nav li { margin: 0 10px; } }
+@media only screen and (max-width: 768px) { .footer .footer__right .tabs .tabs__nav li { margin: 0 10px; }
+  .footer .footer__right .tabs .tabs__content { max-width: 100%; } }
+@media only screen and (max-width: 568px) { .footer .footer__right .tabs .tabs__content { position: relative; padding-top: 36px; }
+  .footer .footer__right .tabs .tabs__content .phones { margin-top: 50px; }
+  .footer .footer__right .tabs .tabs__content a.number_map { position: absolute; top: 35px; left: 50%; width: 100%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
 
 .copyrights { font-size: 13px; color: #c7d6df; }
 
@@ -368,6 +375,7 @@ h5, .h5 { font-size: 15px; }
 .number.number_viber { color: #b580e0; }
 .number.number_skype { font-size: 13px; color: #00aeec; }
 .number.number_map { margin-left: 0; font-size: 13px; color: #c7d6df; }
+@media only screen and (max-width: 568px) { .number.number_map { font-size: 19px; } }
 
 .number-list .number { position: relative; padding-left: 35px; margin-bottom: 0; }
 .number-list .number span { position: absolute; top: 50%; left: 0; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
@@ -379,7 +387,7 @@ h5, .h5 { font-size: 15px; }
 .content { overflow: hidden; padding-right: 28px; padding-bottom: 65px; }
 .content .h1 { margin-bottom: 17px; }
 .content p { margin-bottom: 25px; font-size: 17px; color: #969696; }
-@media only screen and (max-width: 767px) { .content { -webkit-order: 1; order: 1; padding: 20px 10px 30px; }
+@media only screen and (max-width: 767px) { .content { -webkit-order: 1; order: 1; padding: 20px 10px 50px; }
   .content p { text-align: center; } }
 
 .article { display: block; margin-bottom: 40px; }
@@ -410,7 +418,7 @@ h5, .h5 { font-size: 15px; }
 .adv .adv__icon { width: 81px; float: left; margin-right: 7%; }
 .adv .adv__text { overflow: hidden; padding-right: 7%; }
 .adv .adv__text p { font-size: 15px; color: #21310f; text-align: left; }
-@media only screen and (max-width: 767px) { .adv .adv__text .h3 { margin-bottom: 8px; }
+@media only screen and (max-width: 767px) { .adv .adv__text .h3 { margin-bottom: 8px; text-align: left; }
   .adv .adv__text p { margin-bottom: 0; } }
 
 .history > p { margin-bottom: 34px; }
@@ -479,7 +487,8 @@ h5, .h5 { font-size: 15px; }
 .comments .comments__item .date { margin-bottom: 25px; }
 @media only screen and (max-width: 768px) { .comments .comments__item { padding: 15px 20px 25px; }
   .comments .comments__item .quote { padding: 0 0 0 25px; } }
-@media only screen and (max-width: 480px) { .comments .comments__item { padding: 13px 10px; } }
+@media only screen and (max-width: 480px) { .comments .comments__item { padding: 13px 10px 25px; }
+  .comments .comments__item .quote { padding: 0 0 0 18px; } }
 .comments .comments__name { margin-bottom: 8px; font-size: 17px; color: #21310f; font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; }
 
 .popup { position: fixed; top: 0; bottom: 0; right: 0; left: 0; background: rgba(0, 0, 0, 0.7); text-align: center; font-size: 0; overflow-y: auto; z-index: 999; }
