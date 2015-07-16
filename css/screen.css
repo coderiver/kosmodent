@@ -356,6 +356,7 @@ h5, .h5 { font-size: 15px; }
 .footer .footer__right .tabs .tabs__content { clear: both; max-width: 572px; padding-top: 26px; *zoom: 1; overflow: visible; }
 .footer .footer__right .tabs .tabs__content:after { content: " "; display: table; clear: both; }
 .footer .footer__right .tabs .tabs__content .phones .number { font-family: "FregatBold", sans-serif; font-style: normal; font-weight: normal; }
+.footer .footer__right .tabs .tabs__content .phones .number.number_skype { font-family: "FregatRegular", sans-serif; font-style: normal; font-weight: normal; }
 @media only screen and (max-width: 1158px) { .footer .footer__right { float: none; width: 100%; text-align: center; padding-right: 0; }
   .footer .footer__right .tabs .tabs__nav { float: none; margin-right: 0; }
   .footer .footer__right .tabs .tabs__content { max-width: 75%; margin: 0 auto; } }
