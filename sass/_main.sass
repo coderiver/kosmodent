@@ -454,6 +454,8 @@
 	.h2
 		text-align: center
 	.news__item
+		+r(767)
+			margin-bottom: 20px
 		a
 			display: block
 			text-decoration: none
@@ -469,15 +471,17 @@
 			.date
 				margin-bottom: 0
 				+r(767)
-					text-align: left				
+					text-align: left
+					font-size: 15px				
 	.news__img
-		margin-bottom: 18px
+		margin-bottom: 15px
 		width: 100%
 		height: 132px
 		font-size: 0
 		overflow: hidden
 		border-radius: 3px
 		img
+			display: block
 			min-width: 100%
 			min-height: 100%
 			border-radius: 3px
@@ -529,6 +533,9 @@
 				padding-top: 26px
 				+clr
 				overflow: visible
+				.phones
+					.number
+						+fregat-b
 		+r(1158)
 			float: none
 			width: 100%
@@ -698,7 +705,7 @@
 		+r(900)
 			width: 100% 
 		+r(767)
-			margin-bottom: 10px
+			margin-bottom: 20px
 	.adv__icon
 		width: 81px
 		float: left
@@ -979,7 +986,7 @@
 		vertical-align: middle
 		background: #fff
 		width: 600px
-		padding: 55px 48px 50px
+		padding: 55px 48px 80px
 		+r(700)
 			width: 100% 
 			padding: 55px 28px 30px
@@ -1175,6 +1182,8 @@
 					border-bottom: none
 		.article
 			margin-bottom: 0
+			blockquote
+				margin-bottom: 0
 			+r(600)
 				h3
 					margin-bottom: 15px
@@ -1449,15 +1458,13 @@
 	.doctor__topper
 		+clr
 		padding-left: 2px
-		margin-bottom: 30px
-		+r(767)
-			margin-bottom: 10px
 		+r(568)
 			text-align: center
 	.doctor__img
 		width: 212px
 		float: left
 		margin-right: 32px
+		margin-bottom: 25px
 		font-size: 0
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12)
 		img
